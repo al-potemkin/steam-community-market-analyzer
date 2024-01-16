@@ -1,0 +1,66 @@
+[
+  {
+    "name": "Lumpo and Rupertus",
+    "items": [
+      "Lumpo and Rupertus - Shoulder",
+      "Lumpo and Rupertus - Offhand",
+      "Lumpo and Rupertus - Armor",
+      "Lumpo and Rupertus - Arms",
+      "Lumpo and Rupertus - Head",
+      "Lumpo and Rupertus - Back",
+      "Lumpo and Rupertus - Weapon"
+    ]
+  },
+  {
+    "name": "The Abominable Snowbeast",
+    "items": [
+      "The Abominable Snowbeast - Arms",
+      "The Abominable Snowbeast - Legs",
+      "The Abominable Snowbeast - Head",
+      "The Abominable Snowbeast - Back",
+      "The Abominable Snowbeast Loading Screen"
+    ]
+  },
+  {
+    "name": "Silent Wight",
+    "items": [
+      "Silent Wight - Arms",
+      "Silent Wight - Hood",
+      "Silent Wight - Scarf",
+      "Silent Wight - Tail"
+    ]
+  },
+  {
+    "name": "Silver Squall",
+    "items": [
+      "Silver Squall - Armor",
+      "Silver Squall - Weapon",
+      "Silver Squall - Head",
+      "Silver Squall - Costume",
+      "Silver Squall - Mount",
+      "Silver Squall Loading Screen"
+    ]
+  },
+  {
+    "name": "Orbuculum Equinox",
+    "items": [
+      "Orbuculum Equinox"
+    ]
+  },
+  {
+    "name": "Jingle Fist Bundle",
+    "items": [
+      "Jingle Fist",
+      "Jingle Fist Loading Screen"
+    ]
+  }
+//  {
+//    "name": "Frosty the Sew-Man",
+//    "items": [
+//      "The Toy Butcher",
+//      "Frosty the Sew-Man Head",
+//      "Frosty the Sew-Man's Sugary Shiv",
+//      "Frosty the Sew-Man Loading Screen"
+//    ]
+//  }
+]

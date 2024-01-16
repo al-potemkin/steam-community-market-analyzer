@@ -1,0 +1,75 @@
+[
+  {
+    "name": "Winter Lineage Bite of the Surging Wind",
+    "items": [
+      "Winter Lineage Pauldron of the Surging Wind",
+      "Winter Lineage Horns of the Surging Wind",
+      "Winter Lineage Tail of the Surging Wind",
+      "Winter Lineage Belt of the Surging Wind",
+      "Winter Lineage Arms of the Surging Wind",
+      "Winter Lineage Gust of the Surging Wind"
+    ]
+  },
+  {
+    "name": "The Gaze of Zebulon",
+    "items": [
+      "Arms of Zebulon",
+      "Cape of Zebulon",
+      "Mask of Zebulon",
+      "Boots of Zebulon",
+      "Bow of Zebulon",
+      "Pauldrons of Zebulon",
+      "Quiver of Zebulon",
+      "The Gaze of Zebulon Loading Screen"
+    ]
+  },
+  {
+    "name": "Hush of Eternal Night",
+    "items": [
+      "Shield of Eternal Night",
+      "Belt of Eternal Night",
+      "Glaive of Eternal Night",
+      "Mask of Eternal Night",
+      "Bracer of Eternal Night",
+      "Armor of Eternal Night"
+    ]
+  },
+  {
+    "name": "Hunter of the Crystal Drift",
+    "items": [
+      "Claws of the Crystal Drift",
+      "Hide of the Crystal Drift",
+      "Belt of the Crystal Drift",
+      "Mane of the Crystal Drift"
+    ]
+  },
+  {
+    "name": "Rites of Vile Convocation",
+    "items": [
+      "Point of Vile Convocation",
+      "Crown of Vile Convocation",
+      "Belt of Vile Convocation",
+      "Chains of Vile Convocation",
+      "Bracer of Vile Convocation",
+      "Rites of Vile Convocation Loading Screen"
+    ]
+  },
+  {
+    "name": "Curious Coldspell",
+    "items": [
+      "Crown of Curious Coldspell",
+      "Tail of Curious Coldspell",
+      "Wings of Curious Coldspell"
+    ]
+  },
+  {
+    "name": "Frostmoot",
+    "items": [
+      "Large Frostmoot",
+      "Medium Frostmoot",
+      "Small Frostmoot",
+      "Tiny Frostmoot",
+      "Frostmoot Tree"
+    ]
+  }
+]

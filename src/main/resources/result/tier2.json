@@ -1,0 +1,241 @@
+[
+  {
+    "name": "Winter Lineage Bite of the Surging Wind",
+    "lowestPrice": 155.93,
+    "medianPrice": 157.25,
+    "items": [
+      {
+        "name": "Winter Lineage Pauldron of the Surging Wind",
+        "lowestPrice": 41.44,
+        "medianPrice": 41.29
+      },
+      {
+        "name": "Winter Lineage Horns of the Surging Wind",
+        "lowestPrice": 16.80,
+        "medianPrice": 16.77
+      },
+      {
+        "name": "Winter Lineage Tail of the Surging Wind",
+        "lowestPrice": 6.91,
+        "medianPrice": 5.83
+      },
+      {
+        "name": "Winter Lineage Belt of the Surging Wind",
+        "lowestPrice": 11.77,
+        "medianPrice": 11.75
+      },
+      {
+        "name": "Winter Lineage Arms of the Surging Wind",
+        "lowestPrice": 71.56,
+        "medianPrice": 74.39
+      },
+      {
+        "name": "Winter Lineage Gust of the Surging Wind",
+        "lowestPrice": 7.45,
+        "medianPrice": 7.22
+      }
+    ]
+  },
+  {
+    "name": "The Gaze of Zebulon",
+    "lowestPrice": 147.27,
+    "medianPrice": 141.82,
+    "items": [
+      {
+        "name": "Arms of Zebulon",
+        "lowestPrice": 17.59,
+        "medianPrice": 16.75
+      },
+      {
+        "name": "Cape of Zebulon",
+        "lowestPrice": 14.08,
+        "medianPrice": 13.65
+      },
+      {
+        "name": "Mask of Zebulon",
+        "lowestPrice": 58.60,
+        "medianPrice": 55.10
+      },
+      {
+        "name": "Boots of Zebulon",
+        "lowestPrice": 8.80,
+        "medianPrice": 7.95
+      },
+      {
+        "name": "Bow of Zebulon",
+        "lowestPrice": 17.02,
+        "medianPrice": 17.59
+      },
+      {
+        "name": "Pauldrons of Zebulon",
+        "lowestPrice": 23.43,
+        "medianPrice": 23.06
+      },
+      {
+        "name": "Quiver of Zebulon",
+        "lowestPrice": 5.10,
+        "medianPrice": 5.02
+      },
+      {
+        "name": "The Gaze of Zebulon Loading Screen",
+        "lowestPrice": 2.65,
+        "medianPrice": 2.70
+      }
+    ]
+  },
+  {
+    "name": "Hush of Eternal Night",
+    "lowestPrice": 190.26,
+    "medianPrice": 183.89,
+    "items": [
+      {
+        "name": "Shield of Eternal Night",
+        "lowestPrice": 25,
+        "medianPrice": 20.94
+      },
+      {
+        "name": "Belt of Eternal Night",
+        "lowestPrice": 104.38,
+        "medianPrice": 102.84
+      },
+      {
+        "name": "Glaive of Eternal Night",
+        "lowestPrice": 2.55,
+        "medianPrice": 2.44
+      },
+      {
+        "name": "Mask of Eternal Night",
+        "lowestPrice": 16.56,
+        "medianPrice": 16.55
+      },
+      {
+        "name": "Bracer of Eternal Night",
+        "lowestPrice": 0.86,
+        "medianPrice": 0.86
+      },
+      {
+        "name": "Armor of Eternal Night",
+        "lowestPrice": 40.91,
+        "medianPrice": 40.26
+      }
+    ]
+  },
+  {
+    "name": "Hunter of the Crystal Drift",
+    "lowestPrice": 161.02,
+    "medianPrice": 155.16,
+    "items": [
+      {
+        "name": "Claws of the Crystal Drift",
+        "lowestPrice": 108.30,
+        "medianPrice": 104.20
+      },
+      {
+        "name": "Hide of the Crystal Drift",
+        "lowestPrice": 5.87,
+        "medianPrice": 5.75
+      },
+      {
+        "name": "Belt of the Crystal Drift",
+        "lowestPrice": 4.60,
+        "medianPrice": 3.86
+      },
+      {
+        "name": "Mane of the Crystal Drift",
+        "lowestPrice": 42.25,
+        "medianPrice": 41.35
+      }
+    ]
+  },
+  {
+    "name": "Rites of Vile Convocation",
+    "lowestPrice": 156.98,
+    "medianPrice": 151.06,
+    "items": [
+      {
+        "name": "Point of Vile Convocation",
+        "lowestPrice": 12.03,
+        "medianPrice": 13.02
+      },
+      {
+        "name": "Crown of Vile Convocation",
+        "lowestPrice": 19.25,
+        "medianPrice": 17.69
+      },
+      {
+        "name": "Belt of Vile Convocation",
+        "lowestPrice": 81.97,
+        "medianPrice": 77.45
+      },
+      {
+        "name": "Chains of Vile Convocation",
+        "lowestPrice": 42.69,
+        "medianPrice": 42.11
+      },
+      {
+        "name": "Bracer of Vile Convocation",
+        "lowestPrice": 0.20,
+        "medianPrice": 0.14
+      },
+      {
+        "name": "Rites of Vile Convocation Loading Screen",
+        "lowestPrice": 0.84,
+        "medianPrice": 0.65
+      }
+    ]
+  },
+  {
+    "name": "Curious Coldspell",
+    "lowestPrice": 141.50,
+    "medianPrice": 52.05,
+    "items": [
+      {
+        "name": "Crown of Curious Coldspell",
+        "lowestPrice": 13.50,
+        "medianPrice": 12.69
+      },
+      {
+        "name": "Tail of Curious Coldspell",
+        "lowestPrice": 2.41,
+        "medianPrice": 1.91
+      },
+      {
+        "name": "Wings of Curious Coldspell",
+        "lowestPrice": 125.59,
+        "medianPrice": 37.45
+      }
+    ]
+  },
+  {
+    "name": "Frostmoot",
+    "lowestPrice": 202.92,
+    "medianPrice": 195.78,
+    "items": [
+      {
+        "name": "Large Frostmoot",
+        "lowestPrice": 21.50,
+        "medianPrice": 17.99
+      },
+      {
+        "name": "Medium Frostmoot",
+        "lowestPrice": 12.21,
+        "medianPrice": 11.11
+      },
+      {
+        "name": "Small Frostmoot",
+        "lowestPrice": 13.69,
+        "medianPrice": 12
+      },
+      {
+        "name": "Tiny Frostmoot",
+        "lowestPrice": 29.93,
+        "medianPrice": 29.10
+      },
+      {
+        "name": "Frostmoot Tree",
+        "lowestPrice": 125.59,
+        "medianPrice": 125.58
+      }
+    ]
+  }
+]
