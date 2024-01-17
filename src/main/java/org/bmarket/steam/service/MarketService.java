@@ -70,10 +70,10 @@ public class MarketService {
                     if (Objects.isNull(item)
                             || Objects.isNull(item.getSuccess())
                             || Boolean.FALSE == Boolean.parseBoolean(item.getSuccess())) {
-                        log.info("----Banned by IP----");
+                        log.info("######### Banned by ip #########");
                         throw new ItemRetryException(String.format("An error occurred while trying to get information about '%s' item", itemName));
                     }
-                    log.info("{} item: {}", itemName, item);
+                    log.info("[{} item]: {}", itemName, item);
                     return item;
                 } catch (IOException e) {
                     throw new RuntimeException("Can't get an answer: ".concat(itemName));

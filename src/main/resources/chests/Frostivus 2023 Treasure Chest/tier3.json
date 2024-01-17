@@ -1,6 +1,7 @@
 [
   {
     "name": "Lumpo and Rupertus",
+    "bundle": true,
     "items": [
       "Lumpo and Rupertus - Shoulder",
       "Lumpo and Rupertus - Offhand",
@@ -13,6 +14,7 @@
   },
   {
     "name": "The Abominable Snowbeast",
+    "bundle": true,
     "items": [
       "The Abominable Snowbeast - Arms",
       "The Abominable Snowbeast - Legs",
@@ -23,6 +25,7 @@
   },
   {
     "name": "Silent Wight",
+    "bundle": true,
     "items": [
       "Silent Wight - Arms",
       "Silent Wight - Hood",
@@ -32,6 +35,7 @@
   },
   {
     "name": "Silver Squall",
+    "bundle": true,
     "items": [
       "Silver Squall - Armor",
       "Silver Squall - Weapon",
@@ -43,24 +47,18 @@
   },
   {
     "name": "Orbuculum Equinox",
-    "items": [
-      "Orbuculum Equinox"
-    ]
+    "bundle": false
   },
   {
     "name": "Jingle Fist Bundle",
+    "bundle": true,
     "items": [
       "Jingle Fist",
       "Jingle Fist Loading Screen"
     ]
+  },
+  {
+    "name": "Frosty the Sew-Man",
+    "bundle": false
   }
-//  {
-//    "name": "Frosty the Sew-Man",
-//    "items": [
-//      "The Toy Butcher",
-//      "Frosty the Sew-Man Head",
-//      "Frosty the Sew-Man's Sugary Shiv",
-//      "Frosty the Sew-Man Loading Screen"
-//    ]
-//  }
 ]

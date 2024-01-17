@@ -1,6 +1,7 @@
 [
   {
     "name": "Winter Lineage Bite of the Surging Wind",
+    "bundle": true,
     "items": [
       "Winter Lineage Pauldron of the Surging Wind",
       "Winter Lineage Horns of the Surging Wind",
@@ -12,6 +13,7 @@
   },
   {
     "name": "The Gaze of Zebulon",
+    "bundle": true,
     "items": [
       "Arms of Zebulon",
       "Cape of Zebulon",
@@ -25,6 +27,7 @@
   },
   {
     "name": "Hush of Eternal Night",
+    "bundle": true,
     "items": [
       "Shield of Eternal Night",
       "Belt of Eternal Night",
@@ -36,6 +39,7 @@
   },
   {
     "name": "Hunter of the Crystal Drift",
+    "bundle": true,
     "items": [
       "Claws of the Crystal Drift",
       "Hide of the Crystal Drift",
@@ -45,6 +49,7 @@
   },
   {
     "name": "Rites of Vile Convocation",
+    "bundle": true,
     "items": [
       "Point of Vile Convocation",
       "Crown of Vile Convocation",
@@ -56,6 +61,7 @@
   },
   {
     "name": "Curious Coldspell",
+    "bundle": true,
     "items": [
       "Crown of Curious Coldspell",
       "Tail of Curious Coldspell",
@@ -64,6 +70,7 @@
   },
   {
     "name": "Frostmoot",
+    "bundle": true,
     "items": [
       "Large Frostmoot",
       "Medium Frostmoot",

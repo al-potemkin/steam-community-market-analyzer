@@ -25,9 +25,9 @@ public class PriceController {
     }
 
     @GetMapping("/price/items")
-    public List<Item> calculateBundlePrices(@RequestBody List<Bundle> items,
-                                            @RequestParam("currency") Currency currency,
-                                            @RequestParam("application") Application application) {
+    public List<BundlePriceInfo> calculateBundlePrices(@RequestBody List<Bundle> items,
+                                                       @RequestParam("currency") Currency currency,
+                                                       @RequestParam("application") Application application) {
         return priceCalculator.calculateBundlePrices(items, currency, application);
     }
 

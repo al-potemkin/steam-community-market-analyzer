@@ -1,6 +1,7 @@
 [
   {
     "name": "Mistress of the Long Night",
+    "bundle": true,
     "items": [
       "Hood of the Long Night",
       "Cape of the Long Night",
@@ -12,6 +13,7 @@
   },
   {
     "name": "First Night of the Summer Child",
+    "bundle": true,
     "items": [
       "Style of the First Night",
       "Spear of the First Night",
@@ -23,6 +25,7 @@
   },
   {
     "name": "Powdersled Rookery",
+    "bundle": true,
     "items": [
       "Powdersled Rookery Sled",
       "Powdersled Rookery Cannon",
@@ -36,6 +39,7 @@
   },
   {
     "name": "Trail of the Grey Ghost",
+    "bundle": true,
     "items": [
       "Armor of the Grey Ghost",
       "Belt of the Grey Ghost",
@@ -48,6 +52,7 @@
   },
   {
     "name": "Frostreach Brigands",
+    "bundle": true,
     "items": [
       "Frostreach Brigands Axes",
       "Frostreach Brigands Shoulders",
@@ -60,6 +65,7 @@
   },
   {
     "name": "Trek of the Trailblazer",
+    "bundle": true,
     "items": [
       "Armor of the Trailblazer",
       "Seat of the Trailblazer",
@@ -72,6 +78,7 @@
   },
   {
     "name": "Northern Blight",
+    "bundle": true,
     "items": [
       "Northern Blight Arms",
       "Northern Blight Cape",
@@ -83,6 +90,7 @@
   },
   {
     "name": "Icewrack Marauder",
+    "bundle": true,
     "items": [
       "Axes of the Icewrack Marauder",
       "Armor of the Icewrack Marauder",
@@ -92,6 +100,7 @@
   },
   {
     "name": "Pack-Ice Privateer",
+    "bundle": true,
     "items": [
       "Belt of the Pack-Ice Privateer",
       "Gloves of the Pack-Ice Privateer",
@@ -106,6 +115,7 @@
   },
   {
     "name": "Forgotten Renegade",
+    "bundle": true,
     "items": [
       "Light of the Forgotten Renegade",
       "Coat of the Forgotten Renegade",
@@ -116,6 +126,7 @@
   },
   {
     "name": "Ruler of the Frostbite Dunes",
+    "bundle": true,
     "items": [
       "Crown of the Frostbite Dunes",
       "Claws of the Frostbite Dunes",
@@ -127,6 +138,7 @@
   },
   {
     "name": "Hunt of the Odobenus One",
+    "bundle": true,
     "items": [
       "Hook of the Odobenus One",
       "Head of the Odobenus One",
@@ -139,6 +151,7 @@
   },
   {
     "name": "Apex Explorer",
+    "bundle": true,
     "items": [
       "Verna",
       "Shoulder of the Apex Explorer",

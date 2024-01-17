@@ -15,7 +15,7 @@ import java.util.List;
  */
 @Service
 public class ItemParser {
-    @Value("classpath:items.json")
+//    @Value("classpath:items.json")
     private Resource resource;
 
     public List<Bundle> parseJsonWithItems() {

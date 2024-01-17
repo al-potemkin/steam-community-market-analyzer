@@ -11,5 +11,6 @@ import java.util.List;
 @AllArgsConstructor
 public class Bundle {
     private String name;
+    private boolean bundle;
     private List<String> items;
 }

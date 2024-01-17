@@ -1,14 +1,10 @@
 [
   {
     "name": "Guardian Snow Angel",
-    "items": [
-      "Lumpo and Rupertus - Shoulder",
-      "Lumpo and Rupertus - Offhand",
-      "Lumpo and Rupertus - Armor",
-      "Lumpo and Rupertus - Arms",
-      "Lumpo and Rupertus - Head",
-      "Lumpo and Rupertus - Back",
-      "Lumpo and Rupertus - Weapon"
-    ]
+    "bundle": false
+  },
+  {
+    "name": "King Kringle",
+    "bundle": false
   }
 ]
