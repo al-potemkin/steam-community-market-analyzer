@@ -4,6 +4,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import lombok.extern.log4j.Log4j2;
 import org.bmarket.steam.entity.GenericErrorResponse;
 import org.bmarket.steam.exception.ItemNotFoundException;
+import org.bmarket.steam.exception.RedirectionUrlNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -18,6 +19,13 @@ public class ExceptionHandlingAdvice {
     public ResponseEntity<GenericErrorResponse> handleItemNotFoundException(ItemNotFoundException ex,
                                                                             HttpServletRequest request) {
         log.warn("ItemNotFoundException: [{}]", ex.getMessage());
+        return buildException(ex.getMessage(), request, HttpStatus.NOT_FOUND);
+    }
+
+    @ExceptionHandler(RedirectionUrlNotFoundException.class)
+    public ResponseEntity<GenericErrorResponse> handleRedirectionUrlNotFoundException(RedirectionUrlNotFoundException ex,
+                                                                                      HttpServletRequest request) {
+        log.warn("RedirectionUrlNotFoundException: [{}]", ex.getMessage());
         return buildException(ex.getMessage(), request, HttpStatus.NOT_FOUND);
     }
 

@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class SteamTradeMarketResponse {
-    private String success;
+    private boolean success;
     private String volume;
     @JsonProperty("lowest_price")
     private String lowestPrice;
