@@ -10,11 +10,24 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Objects;
+import java.util.stream.IntStream;
 
 @Service
 public class CostAnalysisService {
 
     public static final String COMPARISON_EXCEPTION_MESSAGE = "Comparison tier not found";
+
+    public List<BundlePriceInfo> findLowestPriceBundleByTier(List<BundlePriceInfo> bundlePriceInfo) {
+        var maxTier = bundlePriceInfo.stream()
+                .max(Comparator.comparing(BundlePriceInfo::getTier))
+                .orElseThrow(() -> new ComparisonException(COMPARISON_EXCEPTION_MESSAGE))
+                .getTier();
+
+        return IntStream.rangeClosed(1, maxTier)
+                .mapToObj(tier -> filterByTier(bundlePriceInfo, tier))
+                .map(this::findLowestPriceBundle)
+                .toList();
+    }
 
     public BundlePriceInfo findLowestPriceBundle(List<BundlePriceInfo> bundlePriceInfo) {
         var lowestPriceAssembledBundle = bundlePriceInfo.stream()
@@ -89,5 +102,11 @@ public class CostAnalysisService {
             }
         }
         return conclusion;
+    }
+
+    private List<BundlePriceInfo> filterByTier(List<BundlePriceInfo> bundlePriceInfo, int tier) {
+        return bundlePriceInfo.stream()
+                .filter(info -> tier == info.getTier())
+                .toList();
     }
 }

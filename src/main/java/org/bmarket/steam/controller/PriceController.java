@@ -49,4 +49,14 @@ public class PriceController {
                                 @RequestParam("numberOfItemsToRecycle") int numberOfItemsToRecycle) {
         return costAnalysisService.compareTiers(bundlePriceInfo, numberOfItemsToRecycle);
     }
+
+    @GetMapping("/compare/full")
+    public List<String> compareBundles(@RequestBody List<Bundle> items,
+                                       @RequestParam("currency") Currency currency,
+                                       @RequestParam("application") Application application,
+                                       @RequestParam("numberOfItemsToRecycle") int numberOfItemsToRecycle) {
+        var bundlePrices = priceCalculator.calculateBundlePrices(items, currency, application);
+        var lowestBundlePrices = costAnalysisService.findLowestPriceBundleByTier(bundlePrices);
+        return costAnalysisService.compareTiers(lowestBundlePrices, numberOfItemsToRecycle);
+    }
 }
