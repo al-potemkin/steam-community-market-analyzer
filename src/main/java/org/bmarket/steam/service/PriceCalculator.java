@@ -53,7 +53,7 @@ public class PriceCalculator {
 
                 var item = Item.builder().name(itemName).build();
                 if (Objects.nonNull(prices.getLowestPrice())) {
-                    var lowestPrice = convertStringPriceToBigDecimal(prices.getLowestPrice());
+                    var lowestPrice = convertStringPriceToBigDecimal(prices.getLowestPrice(), currency.getSymbol());
                     item.setLowestPrice(lowestPrice);
                     if (lowestPricePresent) {
                         bundlePriceInfo.increaseAssembledBundleLowestPrice(lowestPrice);
@@ -64,7 +64,7 @@ public class PriceCalculator {
                 }
 
                 if (Objects.nonNull(prices.getMedianPrice())) {
-                    var medianPrice = convertStringPriceToBigDecimal(prices.getMedianPrice());
+                    var medianPrice = convertStringPriceToBigDecimal(prices.getMedianPrice(), currency.getSymbol());
                     item.setMedianPrice(medianPrice);
                     if (medianPricePresent) {
                         bundlePriceInfo.increaseAssembledBundleMedianPrice(medianPrice);
@@ -86,20 +86,20 @@ public class PriceCalculator {
 
         var bundlePrice = marketService.getItemPriceInformation(bundle.getName(), currency, application);
         if (Objects.nonNull(bundlePrice.getLowestPrice())) {
-            var lowestPrice = convertStringPriceToBigDecimal(bundlePrice.getLowestPrice());
+            var lowestPrice = convertStringPriceToBigDecimal(bundlePrice.getLowestPrice(), currency.getSymbol());
             bundlePriceInfo.setPurchasedBundleLowestPrice(lowestPrice);
         }
         if (Objects.nonNull(bundlePrice.getMedianPrice())) {
-            var medianPrice = convertStringPriceToBigDecimal(bundlePrice.getMedianPrice());
+            var medianPrice = convertStringPriceToBigDecimal(bundlePrice.getMedianPrice(), currency.getSymbol());
             bundlePriceInfo.setPurchasedBundleMedianPrice(medianPrice);
         }
         return bundlePriceInfo;
     }
 
-    private BigDecimal convertStringPriceToBigDecimal(String price) {
+    private BigDecimal convertStringPriceToBigDecimal(String price, String currencySymbol) {
         return new BigDecimal(price
                 .replace(" ", Strings.EMPTY)
-                .replace("₴", Strings.EMPTY)
+                .replace(currencySymbol, Strings.EMPTY)
                 .replace(",", "."));
     }
 }
