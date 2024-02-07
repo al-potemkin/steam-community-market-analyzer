@@ -1,7 +1,9 @@
 package org.bmarket.steam.controller;
 
 import lombok.AllArgsConstructor;
-import org.bmarket.steam.entity.*;
+import org.bmarket.steam.entity.Bundle;
+import org.bmarket.steam.entity.BundlePriceInfo;
+import org.bmarket.steam.entity.SteamTradeMarketResponse;
 import org.bmarket.steam.entity.enums.Application;
 import org.bmarket.steam.entity.enums.Currency;
 import org.bmarket.steam.service.MarketService;
@@ -31,13 +33,5 @@ public class PriceController {
                                                        @RequestParam("currency") Currency currency,
                                                        @RequestParam("application") Application application) {
         return priceCalculator.calculateBundlePrices(items, currency, application);
-    }
-
-    @GetMapping("/lowest-price")
-    public Item getLowestPriceBundle(@RequestBody List<Bundle> items,
-                                     @RequestParam("currency") Currency currency,
-                                     @RequestParam("application") Application application) {
-        var bundles = priceCalculator.calculateBundlePrices(items, currency, application);
-        return priceCalculator.getLowestPriceBundle(bundles);
     }
 }

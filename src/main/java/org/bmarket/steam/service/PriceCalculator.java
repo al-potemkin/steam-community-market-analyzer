@@ -12,7 +12,6 @@ import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 import java.util.Objects;
 
@@ -20,15 +19,7 @@ import java.util.Objects;
 @Service
 @RequiredArgsConstructor
 public class PriceCalculator {
-    private final ItemParser itemParser;
     private final MarketService marketService;
-
-    public Item getLowestPriceBundle(List<BundlePriceInfo> bundles) {
-        return bundles.stream()
-                .map(BundlePriceInfo::getAssembledBundle)
-                .min(Comparator.comparing(Item::getLowestPrice))
-                .orElseThrow(() -> new ItemNotFoundException("Bundle not found"));
-    }
 
     public List<BundlePriceInfo> calculateBundlePrices(List<Bundle> items,
                                                        Currency currency,
@@ -46,47 +37,65 @@ public class PriceCalculator {
                                                    Application application) {
         var bundlePriceInfo = requestDefaultBundlePriceInfo(bundle, currency, application);
 
-        if (bundle.isBundle()) {
-            var lowestPricePresent = true;
-            var medianPricePresent = true;
+        // Some sets are sold together with personalities (it is impossible to buy a separate personality for a character),
+        // which makes it difficult to compare the price of the entire set with the sum of the items separately
+        //
+        // It also allows you to find out the price of an individual item,
+        // although for this it is better to use a separate method PriceController#getItemPriceInformation
 
-            for (var itemName : bundle.getItems()) {
-                var prices = marketService.getItemPriceInformation(itemName, currency, application);
-
-                var item = Item.builder().name(itemName).build();
-                if (Objects.nonNull(prices.getLowestPrice())) {
-                    var lowestPrice = convertStringPriceToBigDecimal(prices.getLowestPrice(), currency.getSymbol());
-                    item.setLowestPrice(lowestPrice);
-                    if (lowestPricePresent) {
-                        bundlePriceInfo.increaseAssembledBundleLowestPrice(lowestPrice);
-                    }
-                } else {
-                    lowestPricePresent = false;
-                    bundlePriceInfo.resetAssembledBundleLowestPrice();
-                }
-
-                if (Objects.nonNull(prices.getMedianPrice())) {
-                    var medianPrice = convertStringPriceToBigDecimal(prices.getMedianPrice(), currency.getSymbol());
-                    item.setMedianPrice(medianPrice);
-                    if (medianPricePresent) {
-                        bundlePriceInfo.increaseAssembledBundleMedianPrice(medianPrice);
-                    }
-                } else {
-                    medianPricePresent = false;
-                    bundlePriceInfo.resetAssembledBundleMedianPrice();
-                }
-                bundlePriceInfo.addItem(item);
-            }
+        if (bundle.isBundle()) { // bundle with a personality is not a bundle && separate item is not a bundle
+            findPricesForEachItem(bundle, currency, application, bundlePriceInfo);
         }
         return bundlePriceInfo;
     }
 
+    /**
+     * Calculating the total cost of bundle if you buy each item separately
+     */
+    private void findPricesForEachItem(Bundle bundle, Currency currency, Application application, BundlePriceInfo bundlePriceInfo) {
+        var lowestPricePresent = true;
+        var medianPricePresent = true; // median price is not always present in response, so if there is no price, then total will no longer count for the bundle
+
+        for (var itemName : bundle.getItems()) {
+            var prices = marketService.getItemPriceInformation(itemName, currency, application);
+            var item = Item.builder()
+                    .name(itemName)
+                    .build();
+
+            if (Objects.nonNull(prices.getLowestPrice())) {
+                var lowestPrice = convertStringPriceToBigDecimal(prices.getLowestPrice(), currency.getSymbol());
+                item.setLowestPrice(lowestPrice);
+                if (lowestPricePresent) {
+                    bundlePriceInfo.increaseAssembledBundleLowestPrice(lowestPrice);
+                }
+            } else {
+                lowestPricePresent = false;
+                bundlePriceInfo.resetAssembledBundleLowestPrice();
+            }
+
+            if (Objects.nonNull(prices.getMedianPrice())) {
+                var medianPrice = convertStringPriceToBigDecimal(prices.getMedianPrice(), currency.getSymbol());
+                item.setMedianPrice(medianPrice);
+                if (medianPricePresent) {
+                    bundlePriceInfo.increaseAssembledBundleMedianPrice(medianPrice);
+                }
+            } else {
+                medianPricePresent = false;
+                bundlePriceInfo.resetAssembledBundleMedianPrice();
+            }
+            bundlePriceInfo.addItem(item);
+        }
+    }
+
+    /**
+     * Request for prices if buy the whole set
+     */
     private BundlePriceInfo requestDefaultBundlePriceInfo(Bundle bundle, Currency currency, Application application) {
+        var bundlePrice = marketService.getItemPriceInformation(bundle.getName(), currency, application);
         var bundlePriceInfo = BundlePriceInfo.builder()
                 .name(bundle.getName())
                 .build();
 
-        var bundlePrice = marketService.getItemPriceInformation(bundle.getName(), currency, application);
         if (Objects.nonNull(bundlePrice.getLowestPrice())) {
             var lowestPrice = convertStringPriceToBigDecimal(bundlePrice.getLowestPrice(), currency.getSymbol());
             bundlePriceInfo.setPurchasedBundleLowestPrice(lowestPrice);
@@ -98,6 +107,11 @@ public class PriceCalculator {
         return bundlePriceInfo;
     }
 
+    /**
+     * Formats and converts price to BigDecimal type.
+     * <p>
+     * Example of data to be converted: "$0.87" | "£0.70" | "0,81€" | "CHF 0.76"
+     */
     private BigDecimal convertStringPriceToBigDecimal(String price, String currencySymbol) {
         return new BigDecimal(price
                 .replace(" ", Strings.EMPTY)
