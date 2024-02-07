@@ -3,8 +3,11 @@ package org.bmarket.steam.service;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.apache.logging.log4j.util.Strings;
-import org.bmarket.steam.entity.*;
-import org.bmarket.steam.exception.ItemNotFoundException;
+import org.bmarket.steam.entity.Bundle;
+import org.bmarket.steam.entity.BundlePriceInfo;
+import org.bmarket.steam.entity.Item;
+import org.bmarket.steam.entity.enums.Application;
+import org.bmarket.steam.entity.enums.Currency;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
@@ -30,7 +33,6 @@ public class PriceCalculator {
     public List<BundlePriceInfo> calculateBundlePrices(List<Bundle> items,
                                                        Currency currency,
                                                        Application application) {
-//        var items = itemParser.parseJsonWithItems();
         var itemPriceList = new ArrayList<BundlePriceInfo>();
 
         for (var bundle : items) {

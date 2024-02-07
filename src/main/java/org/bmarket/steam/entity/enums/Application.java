@@ -1,4 +1,4 @@
-package org.bmarket.steam.entity;
+package org.bmarket.steam.entity.enums;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

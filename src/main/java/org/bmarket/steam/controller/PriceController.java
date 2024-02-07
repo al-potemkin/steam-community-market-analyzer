@@ -2,6 +2,8 @@ package org.bmarket.steam.controller;
 
 import lombok.AllArgsConstructor;
 import org.bmarket.steam.entity.*;
+import org.bmarket.steam.entity.enums.Application;
+import org.bmarket.steam.entity.enums.Currency;
 import org.bmarket.steam.service.MarketService;
 import org.bmarket.steam.service.PriceCalculator;
 import org.springframework.web.bind.annotation.GetMapping;

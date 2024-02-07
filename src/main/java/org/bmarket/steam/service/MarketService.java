@@ -2,8 +2,8 @@ package org.bmarket.steam.service;
 
 import lombok.AllArgsConstructor;
 import lombok.extern.log4j.Log4j2;
-import org.bmarket.steam.entity.Application;
-import org.bmarket.steam.entity.Currency;
+import org.bmarket.steam.entity.enums.Application;
+import org.bmarket.steam.entity.enums.Currency;
 import org.bmarket.steam.entity.SteamTradeMarketResponse;
 import org.bmarket.steam.exception.RedirectionUrlNotFoundException;
 import org.bmarket.steam.service.retry.RetryLogic;
