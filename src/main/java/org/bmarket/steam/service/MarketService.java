@@ -34,6 +34,7 @@ public class MarketService {
                                                             Application application) {
         var tradeMarketUrl = buildTradeMarketUrl(itemName, currency, application);
         var redirectUrl = getRedirectLink(tradeMarketUrl);
+        log.debug("Redirect url-[{}]: {}", itemName, redirectUrl);
         var item = sendRequestToReceiveInformationAboutItem(redirectUrl);
         log.info("[{}]: {}", itemName, item);
         return item;
@@ -44,7 +45,7 @@ public class MarketService {
      */
     private SteamTradeMarketResponse sendRequestToReceiveInformationAboutItem(String url) {
         Supplier<SteamTradeMarketResponse> supplier = () -> restTemplate.getForEntity(url, SteamTradeMarketResponse.class).getBody();
-        return RetryLogic.retry(supplier, 12, 5, TimeUnit.SECONDS).get();
+        return RetryLogic.retry(supplier, 14, 5, TimeUnit.SECONDS).get();
     }
 
     private String getRedirectLink(String marketUrl) {

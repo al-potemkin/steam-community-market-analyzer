@@ -1,0 +1,146 @@
+[
+  {
+    "name": "Mistress of the Long Night",
+    "tier": 1,
+    "purchasedBundle": {
+      "lowestPrice": 22.57,
+      "medianPrice": 21.47
+    },
+    "assembledBundle": {
+      "lowestPrice": 17.48,
+      "medianPrice": 16.13
+    },
+    "items": [
+      {
+        "name": "Hood of the Long Night",
+        "lowestPrice": 1.84,
+        "medianPrice": 1.65
+      },
+      {
+        "name": "Cape of the Long Night",
+        "lowestPrice": 2.57,
+        "medianPrice": 2.47
+      },
+      {
+        "name": "Skirt of the Long Night",
+        "lowestPrice": 1.22,
+        "medianPrice": 1.08
+      },
+      {
+        "name": "Feathers of the Long Night",
+        "lowestPrice": 6.85,
+        "medianPrice": 6.59
+      },
+      {
+        "name": "Belt of the Long Night",
+        "lowestPrice": 1.51,
+        "medianPrice": 1.47
+      },
+      {
+        "name": "Spirit of the Long Night",
+        "lowestPrice": 3.49,
+        "medianPrice": 2.87
+      }
+    ],
+    "lowestBundlePrice": 17.48
+  },
+  {
+    "name": "The Gaze of Zebulon",
+    "tier": 2,
+    "purchasedBundle": {
+      "lowestPrice": 111.41,
+      "medianPrice": 40.01
+    },
+    "assembledBundle": {
+      "lowestPrice": 92.89,
+      "medianPrice": 90.53
+    },
+    "items": [
+      {
+        "name": "Arms of Zebulon",
+        "lowestPrice": 7.84,
+        "medianPrice": 7.67
+      },
+      {
+        "name": "Cape of Zebulon",
+        "lowestPrice": 6.57,
+        "medianPrice": 6.41
+      },
+      {
+        "name": "Mask of Zebulon",
+        "lowestPrice": 43.38,
+        "medianPrice": 42.55
+      },
+      {
+        "name": "Boots of Zebulon",
+        "lowestPrice": 4.76,
+        "medianPrice": 4.78
+      },
+      {
+        "name": "Bow of Zebulon",
+        "lowestPrice": 11.22,
+        "medianPrice": 11.25
+      },
+      {
+        "name": "Pauldrons of Zebulon",
+        "lowestPrice": 15.36,
+        "medianPrice": 15.16
+      },
+      {
+        "name": "Quiver of Zebulon",
+        "lowestPrice": 2.10,
+        "medianPrice": 2.08
+      },
+      {
+        "name": "The Gaze of Zebulon Loading Screen",
+        "lowestPrice": 1.66,
+        "medianPrice": 0.63
+      }
+    ],
+    "lowestBundlePrice": 92.89
+  },
+  {
+    "name": "Silent Wight",
+    "tier": 3,
+    "purchasedBundle": {
+      "lowestPrice": 560.58,
+      "medianPrice": 554.49
+    },
+    "assembledBundle": {
+      "lowestPrice": 502.74,
+      "medianPrice": 405.98
+    },
+    "items": [
+      {
+        "name": "Silent Wight - Arms",
+        "lowestPrice": 22.78,
+        "medianPrice": 17.36
+      },
+      {
+        "name": "Silent Wight - Hood",
+        "lowestPrice": 285.61,
+        "medianPrice": 304.25
+      },
+      {
+        "name": "Silent Wight - Scarf",
+        "lowestPrice": 57.73,
+        "medianPrice": 42.18
+      },
+      {
+        "name": "Silent Wight - Tail",
+        "lowestPrice": 136.62,
+        "medianPrice": 42.19
+      }
+    ],
+    "lowestBundlePrice": 502.74
+  },
+  {
+    "name": "Guardian Snow Angel",
+    "tier": 4,
+    "purchasedBundle": {
+      "lowestPrice": 748.35,
+      "medianPrice": 741.97
+    },
+    "lowestBundlePrice": 748.35
+  }
+]

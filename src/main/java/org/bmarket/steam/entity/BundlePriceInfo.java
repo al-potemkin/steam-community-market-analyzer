@@ -82,4 +82,23 @@ public class BundlePriceInfo {
         }
         items.add(item);
     }
+
+    public BigDecimal getLowestBundlePrice() {
+        var a = Objects.nonNull(purchasedBundle) ? purchasedBundle.getLowestPrice() : null;
+        var b = Objects.nonNull(assembledBundle) ? assembledBundle.getLowestPrice() : null;
+        if (Objects.nonNull(a) && Objects.nonNull(b)) {
+            if (a.compareTo(b) < 0) {
+                return a;
+            } else {
+                return b;
+            }
+        }
+        if (Objects.nonNull(a)) {
+            return a;
+        }
+        if (Objects.nonNull(b)) {
+            return b;
+        }
+        throw new NullPointerException("No set information available");
+    }
 }
