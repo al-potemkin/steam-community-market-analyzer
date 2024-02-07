@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Guardian Snow Angel",
+    "tier": 4,
+    "purchasedBundle": {
+      "lowestPrice": 748.35,
+      "medianPrice": 741.97
+    },
+    "lowestBundlePrice": 748.35
+  },
+  {
+    "name": "King Kringle",
+    "tier": 4,
+    "purchasedBundle": {
+      "lowestPrice": 4689.99,
+      "medianPrice": 4528.14
+    },
+    "lowestBundlePrice": 4689.99
+  }
+]

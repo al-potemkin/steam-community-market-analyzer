@@ -1,0 +1,215 @@
+[
+  {
+    "name": "Lumpo and Rupertus",
+    "tier": 3,
+    "purchasedBundle": {
+      "lowestPrice": 558.37,
+      "medianPrice": 460.46
+    },
+    "assembledBundle": {
+      "lowestPrice": 541.98,
+      "medianPrice": 0
+    },
+    "items": [
+      {
+        "name": "Lumpo and Rupertus - Shoulder",
+        "lowestPrice": 206.97,
+        "medianPrice": 199.58
+      },
+      {
+        "name": "Lumpo and Rupertus - Offhand",
+        "lowestPrice": 19.03,
+        "medianPrice": 16.56
+      },
+      {
+        "name": "Lumpo and Rupertus - Armor",
+        "lowestPrice": 74.61,
+        "medianPrice": 73.60
+      },
+      {
+        "name": "Lumpo and Rupertus - Arms",
+        "lowestPrice": 61.53,
+        "medianPrice": 52.51
+      },
+      {
+        "name": "Lumpo and Rupertus - Head",
+        "lowestPrice": 30.18,
+        "medianPrice": 24.95
+      },
+      {
+        "name": "Lumpo and Rupertus - Back",
+        "lowestPrice": 24.95,
+        "medianPrice": null
+      },
+      {
+        "name": "Lumpo and Rupertus - Weapon",
+        "lowestPrice": 124.71,
+        "medianPrice": 137.33
+      }
+    ],
+    "lowestBundlePrice": 541.98
+  },
+  {
+    "name": "The Abominable Snowbeast",
+    "tier": 3,
+    "purchasedBundle": {
+      "lowestPrice": 565.24,
+      "medianPrice": 539.06
+    },
+    "assembledBundle": {
+      "lowestPrice": 583.42,
+      "medianPrice": 502.24
+    },
+    "items": [
+      {
+        "name": "The Abominable Snowbeast - Arms",
+        "lowestPrice": 53.31,
+        "medianPrice": 45.56
+      },
+      {
+        "name": "The Abominable Snowbeast - Legs",
+        "lowestPrice": 42.17,
+        "medianPrice": 37.73
+      },
+      {
+        "name": "The Abominable Snowbeast - Head",
+        "lowestPrice": 257.65,
+        "medianPrice": 226.38
+      },
+      {
+        "name": "The Abominable Snowbeast - Back",
+        "lowestPrice": 224.49,
+        "medianPrice": 189.16
+      },
+      {
+        "name": "The Abominable Snowbeast Loading Screen",
+        "lowestPrice": 5.80,
+        "medianPrice": 3.41
+      }
+    ],
+    "lowestBundlePrice": 565.24
+  },
+  {
+    "name": "Silent Wight",
+    "tier": 3,
+    "purchasedBundle": {
+      "lowestPrice": 560.58,
+      "medianPrice": 554.49
+    },
+    "assembledBundle": {
+      "lowestPrice": 502.74,
+      "medianPrice": 405.98
+    },
+    "items": [
+      {
+        "name": "Silent Wight - Arms",
+        "lowestPrice": 22.78,
+        "medianPrice": 17.36
+      },
+      {
+        "name": "Silent Wight - Hood",
+        "lowestPrice": 285.61,
+        "medianPrice": 304.25
+      },
+      {
+        "name": "Silent Wight - Scarf",
+        "lowestPrice": 57.73,
+        "medianPrice": 42.18
+      },
+      {
+        "name": "Silent Wight - Tail",
+        "lowestPrice": 136.62,
+        "medianPrice": 42.19
+      }
+    ],
+    "lowestBundlePrice": 502.74
+  },
+  {
+    "name": "Silver Squall",
+    "tier": 3,
+    "purchasedBundle": {
+      "lowestPrice": 605.51,
+      "medianPrice": 587.78
+    },
+    "assembledBundle": {
+      "lowestPrice": 681.37,
+      "medianPrice": 721.50
+    },
+    "items": [
+      {
+        "name": "Silver Squall - Armor",
+        "lowestPrice": 19.09,
+        "medianPrice": 20.44
+      },
+      {
+        "name": "Silver Squall - Weapon",
+        "lowestPrice": 10.66,
+        "medianPrice": 10.19
+      },
+      {
+        "name": "Silver Squall - Head",
+        "lowestPrice": 15.61,
+        "medianPrice": 15.72
+      },
+      {
+        "name": "Silver Squall - Costume",
+        "lowestPrice": 10.66,
+        "medianPrice": 10.62
+      },
+      {
+        "name": "Silver Squall - Mount",
+        "lowestPrice": 620.92,
+        "medianPrice": 660.22
+      },
+      {
+        "name": "Silver Squall Loading Screen",
+        "lowestPrice": 4.43,
+        "medianPrice": 4.31
+      }
+    ],
+    "lowestBundlePrice": 605.51
+  },
+  {
+    "name": "Orbuculum Equinox",
+    "tier": 3,
+    "purchasedBundle": {
+      "lowestPrice": 592.16,
+      "medianPrice": 576.66
+    },
+    "lowestBundlePrice": 592.16
+  },
+  {
+    "name": "Jingle Fist Bundle",
+    "tier": 3,
+    "purchasedBundle": {
+      "lowestPrice": 523.64,
+      "medianPrice": 544.93
+    },
+    "assembledBundle": {
+      "lowestPrice": 579.59,
+      "medianPrice": 525.25
+    },
+    "items": [
+      {
+        "name": "Jingle Fist",
+        "lowestPrice": 575.73,
+        "medianPrice": 521.37
+      },
+      {
+        "name": "Jingle Fist Loading Screen",
+        "lowestPrice": 3.86,
+        "medianPrice": 3.88
+      }
+    ],
+    "lowestBundlePrice": 523.64
+  },
+  {
+    "name": "Frosty the Sew-Man",
+    "tier": 3,
+    "purchasedBundle": {
+      "lowestPrice": 835.78,
+      "medianPrice": 832.74
+    },
+    "lowestBundlePrice": 835.78
+  }
+]

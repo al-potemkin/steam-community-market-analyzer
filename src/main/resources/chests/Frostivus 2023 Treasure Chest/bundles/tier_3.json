@@ -1,6 +1,7 @@
 [
   {
     "name": "Lumpo and Rupertus",
+    "tier": 3,
     "bundle": true,
     "items": [
       "Lumpo and Rupertus - Shoulder",
@@ -14,6 +15,7 @@
   },
   {
     "name": "The Abominable Snowbeast",
+    "tier": 3,
     "bundle": true,
     "items": [
       "The Abominable Snowbeast - Arms",
@@ -25,6 +27,7 @@
   },
   {
     "name": "Silent Wight",
+    "tier": 3,
     "bundle": true,
     "items": [
       "Silent Wight - Arms",
@@ -35,6 +38,7 @@
   },
   {
     "name": "Silver Squall",
+    "tier": 3,
     "bundle": true,
     "items": [
       "Silver Squall - Armor",
@@ -47,10 +51,12 @@
   },
   {
     "name": "Orbuculum Equinox",
+    "tier": 3,
     "bundle": false
   },
   {
     "name": "Jingle Fist Bundle",
+    "tier": 3,
     "bundle": true,
     "items": [
       "Jingle Fist",
@@ -59,6 +65,7 @@
   },
   {
     "name": "Frosty the Sew-Man",
+    "tier": 3,
     "bundle": false
   }
 ]

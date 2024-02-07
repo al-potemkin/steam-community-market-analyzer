@@ -17,6 +17,7 @@ import java.util.Objects;
 @AllArgsConstructor
 public class BundlePriceInfo {
     private String name;
+    private int tier;
     //Price of set if you buy it entirely. Can be one item or a set for persona
     private Item purchasedBundle;
     //The price of set if you buy things separately and then put them together in one set

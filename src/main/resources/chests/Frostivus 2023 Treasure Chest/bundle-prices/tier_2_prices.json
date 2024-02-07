@@ -1,0 +1,297 @@
+[
+  {
+    "name": "Winter Lineage Bite of the Surging Wind",
+    "tier": 2,
+    "purchasedBundle": {
+      "lowestPrice": 119,
+      "medianPrice": 112.14
+    },
+    "assembledBundle": {
+      "lowestPrice": 115.78,
+      "medianPrice": 105.97
+    },
+    "items": [
+      {
+        "name": "Winter Lineage Pauldron of the Surging Wind",
+        "lowestPrice": 24.72,
+        "medianPrice": 24.82
+      },
+      {
+        "name": "Winter Lineage Horns of the Surging Wind",
+        "lowestPrice": 13,
+        "medianPrice": 9.98
+      },
+      {
+        "name": "Winter Lineage Tail of the Surging Wind",
+        "lowestPrice": 5.24,
+        "medianPrice": 4.28
+      },
+      {
+        "name": "Winter Lineage Belt of the Surging Wind",
+        "lowestPrice": 7.79,
+        "medianPrice": 6.15
+      },
+      {
+        "name": "Winter Lineage Arms of the Surging Wind",
+        "lowestPrice": 59.89,
+        "medianPrice": 55.87
+      },
+      {
+        "name": "Winter Lineage Gust of the Surging Wind",
+        "lowestPrice": 5.14,
+        "medianPrice": 4.87
+      }
+    ],
+    "lowestBundlePrice": 115.78
+  },
+  {
+    "name": "The Gaze of Zebulon",
+    "tier": 2,
+    "purchasedBundle": {
+      "lowestPrice": 111.41,
+      "medianPrice": 40.01
+    },
+    "assembledBundle": {
+      "lowestPrice": 92.89,
+      "medianPrice": 90.53
+    },
+    "items": [
+      {
+        "name": "Arms of Zebulon",
+        "lowestPrice": 7.84,
+        "medianPrice": 7.67
+      },
+      {
+        "name": "Cape of Zebulon",
+        "lowestPrice": 6.57,
+        "medianPrice": 6.41
+      },
+      {
+        "name": "Mask of Zebulon",
+        "lowestPrice": 43.38,
+        "medianPrice": 42.55
+      },
+      {
+        "name": "Boots of Zebulon",
+        "lowestPrice": 4.76,
+        "medianPrice": 4.78
+      },
+      {
+        "name": "Bow of Zebulon",
+        "lowestPrice": 11.22,
+        "medianPrice": 11.25
+      },
+      {
+        "name": "Pauldrons of Zebulon",
+        "lowestPrice": 15.36,
+        "medianPrice": 15.16
+      },
+      {
+        "name": "Quiver of Zebulon",
+        "lowestPrice": 2.10,
+        "medianPrice": 2.08
+      },
+      {
+        "name": "The Gaze of Zebulon Loading Screen",
+        "lowestPrice": 1.66,
+        "medianPrice": 0.63
+      }
+    ],
+    "lowestBundlePrice": 92.89
+  },
+  {
+    "name": "Hush of Eternal Night",
+    "tier": 2,
+    "purchasedBundle": {
+      "lowestPrice": 114.96,
+      "medianPrice": 101.38
+    },
+    "assembledBundle": {
+      "lowestPrice": 121.86,
+      "medianPrice": 111.21
+    },
+    "items": [
+      {
+        "name": "Shield of Eternal Night",
+        "lowestPrice": 14.75,
+        "medianPrice": 13.63
+      },
+      {
+        "name": "Belt of Eternal Night",
+        "lowestPrice": 65.50,
+        "medianPrice": 59.87
+      },
+      {
+        "name": "Glaive of Eternal Night",
+        "lowestPrice": 2.66,
+        "medianPrice": 2.67
+      },
+      {
+        "name": "Mask of Eternal Night",
+        "lowestPrice": 14.69,
+        "medianPrice": 14.40
+      },
+      {
+        "name": "Bracer of Eternal Night",
+        "lowestPrice": 1.66,
+        "medianPrice": 1.68
+      },
+      {
+        "name": "Armor of Eternal Night",
+        "lowestPrice": 22.60,
+        "medianPrice": 18.96
+      }
+    ],
+    "lowestBundlePrice": 114.96
+  },
+  {
+    "name": "Hunter of the Crystal Drift",
+    "tier": 2,
+    "purchasedBundle": {
+      "lowestPrice": 114.67,
+      "medianPrice": 108.76
+    },
+    "assembledBundle": {
+      "lowestPrice": 99.45,
+      "medianPrice": 96.89
+    },
+    "items": [
+      {
+        "name": "Claws of the Crystal Drift",
+        "lowestPrice": 62.64,
+        "medianPrice": 60.10
+      },
+      {
+        "name": "Hide of the Crystal Drift",
+        "lowestPrice": 4.50,
+        "medianPrice": 4.02
+      },
+      {
+        "name": "Belt of the Crystal Drift",
+        "lowestPrice": 4.30,
+        "medianPrice": 4.87
+      },
+      {
+        "name": "Mane of the Crystal Drift",
+        "lowestPrice": 28.01,
+        "medianPrice": 27.90
+      }
+    ],
+    "lowestBundlePrice": 99.45
+  },
+  {
+    "name": "Rites of Vile Convocation",
+    "tier": 2,
+    "purchasedBundle": {
+      "lowestPrice": 111.36,
+      "medianPrice": 108.66
+    },
+    "assembledBundle": {
+      "lowestPrice": 130.91,
+      "medianPrice": 108.65
+    },
+    "items": [
+      {
+        "name": "Point of Vile Convocation",
+        "lowestPrice": 10.75,
+        "medianPrice": 9.53
+      },
+      {
+        "name": "Crown of Vile Convocation",
+        "lowestPrice": 18.22,
+        "medianPrice": 13.46
+      },
+      {
+        "name": "Belt of Vile Convocation",
+        "lowestPrice": 63.25,
+        "medianPrice": 47.61
+      },
+      {
+        "name": "Chains of Vile Convocation",
+        "lowestPrice": 36.80,
+        "medianPrice": 36.43
+      },
+      {
+        "name": "Bracer of Vile Convocation",
+        "lowestPrice": 0.24,
+        "medianPrice": 0.37
+      },
+      {
+        "name": "Rites of Vile Convocation Loading Screen",
+        "lowestPrice": 1.65,
+        "medianPrice": 1.25
+      }
+    ],
+    "lowestBundlePrice": 111.36
+  },
+  {
+    "name": "Curious Coldspell",
+    "tier": 2,
+    "purchasedBundle": {
+      "lowestPrice": 111.93,
+      "medianPrice": 101.11
+    },
+    "assembledBundle": {
+      "lowestPrice": 109.92,
+      "medianPrice": 101.01
+    },
+    "items": [
+      {
+        "name": "Crown of Curious Coldspell",
+        "lowestPrice": 16.47,
+        "medianPrice": 16.24
+      },
+      {
+        "name": "Tail of Curious Coldspell",
+        "lowestPrice": 2.37,
+        "medianPrice": 2.39
+      },
+      {
+        "name": "Wings of Curious Coldspell",
+        "lowestPrice": 91.08,
+        "medianPrice": 82.38
+      }
+    ],
+    "lowestBundlePrice": 109.92
+  },
+  {
+    "name": "Frostmoot",
+    "tier": 2,
+    "purchasedBundle": {
+      "lowestPrice": 140.73,
+      "medianPrice": 140.72
+    },
+    "assembledBundle": {
+      "lowestPrice": 133.31,
+      "medianPrice": 137.63
+    },
+    "items": [
+      {
+        "name": "Large Frostmoot",
+        "lowestPrice": 20.50,
+        "medianPrice": 19.66
+      },
+      {
+        "name": "Medium Frostmoot",
+        "lowestPrice": 9.51,
+        "medianPrice": 9.82
+      },
+      {
+        "name": "Small Frostmoot",
+        "lowestPrice": 8.80,
+        "medianPrice": 10.84
+      },
+      {
+        "name": "Tiny Frostmoot",
+        "lowestPrice": 19.98,
+        "medianPrice": 19.99
+      },
+      {
+        "name": "Frostmoot Tree",
+        "lowestPrice": 74.52,
+        "medianPrice": 77.32
+      }
+    ],
+    "lowestBundlePrice": 133.31
+  }
+]

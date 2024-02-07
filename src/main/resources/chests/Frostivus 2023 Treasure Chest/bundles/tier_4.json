@@ -1,10 +1,12 @@
 [
   {
     "name": "Guardian Snow Angel",
+    "tier": 4,
     "bundle": false
   },
   {
     "name": "King Kringle",
+    "tier": 4,
     "bundle": false
   }
 ]

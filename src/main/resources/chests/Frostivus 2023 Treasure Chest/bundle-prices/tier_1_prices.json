@@ -1,0 +1,612 @@
+[
+  {
+    "name": "Mistress of the Long Night",
+    "tier": 1,
+    "purchasedBundle": {
+      "lowestPrice": 22.57,
+      "medianPrice": 21.47
+    },
+    "assembledBundle": {
+      "lowestPrice": 17.48,
+      "medianPrice": 16.13
+    },
+    "items": [
+      {
+        "name": "Hood of the Long Night",
+        "lowestPrice": 1.84,
+        "medianPrice": 1.65
+      },
+      {
+        "name": "Cape of the Long Night",
+        "lowestPrice": 2.57,
+        "medianPrice": 2.47
+      },
+      {
+        "name": "Skirt of the Long Night",
+        "lowestPrice": 1.22,
+        "medianPrice": 1.08
+      },
+      {
+        "name": "Feathers of the Long Night",
+        "lowestPrice": 6.85,
+        "medianPrice": 6.59
+      },
+      {
+        "name": "Belt of the Long Night",
+        "lowestPrice": 1.51,
+        "medianPrice": 1.47
+      },
+      {
+        "name": "Spirit of the Long Night",
+        "lowestPrice": 3.49,
+        "medianPrice": 2.87
+      }
+    ],
+    "lowestBundlePrice": 17.48
+  },
+  {
+    "name": "First Night of the Summer Child",
+    "tier": 1,
+    "purchasedBundle": {
+      "lowestPrice": 22.35,
+      "medianPrice": 22.16
+    },
+    "assembledBundle": {
+      "lowestPrice": 18.78,
+      "medianPrice": 17.08
+    },
+    "items": [
+      {
+        "name": "Style of the First Night",
+        "lowestPrice": 6.62,
+        "medianPrice": 6.63
+      },
+      {
+        "name": "Spear of the First Night",
+        "lowestPrice": 2.46,
+        "medianPrice": 1.67
+      },
+      {
+        "name": "Bracers of the First Night",
+        "lowestPrice": 3.50,
+        "medianPrice": 3.25
+      },
+      {
+        "name": "Belt of the First Night",
+        "lowestPrice": 2.18,
+        "medianPrice": 1.96
+      },
+      {
+        "name": "Garb of the First Night",
+        "lowestPrice": 1.87,
+        "medianPrice": 1.68
+      },
+      {
+        "name": "Loading Screen of the First Night",
+        "lowestPrice": 2.15,
+        "medianPrice": 1.89
+      }
+    ],
+    "lowestBundlePrice": 18.78
+  },
+  {
+    "name": "Powdersled Rookery",
+    "tier": 1,
+    "purchasedBundle": {
+      "lowestPrice": 28.95,
+      "medianPrice": 23.38
+    },
+    "assembledBundle": {
+      "lowestPrice": 19.03,
+      "medianPrice": 63.80
+    },
+    "items": [
+      {
+        "name": "Powdersled Rookery Sled",
+        "lowestPrice": 3.30,
+        "medianPrice": 3.39
+      },
+      {
+        "name": "Powdersled Rookery Cannon",
+        "lowestPrice": 4.09,
+        "medianPrice": 3.87
+      },
+      {
+        "name": "Powdersled Rookery Bomb",
+        "lowestPrice": 0.21,
+        "medianPrice": 0.38
+      },
+      {
+        "name": "Powdersled Rookery Sign",
+        "lowestPrice": 0.40,
+        "medianPrice": 45.65
+      },
+      {
+        "name": "Powdersled Rookery Spleen",
+        "lowestPrice": 4.78,
+        "medianPrice": 4.81
+      },
+      {
+        "name": "Powdersled Rookery Squee",
+        "lowestPrice": 3.28,
+        "medianPrice": 2.90
+      },
+      {
+        "name": "Powdersled Rookery Spoon",
+        "lowestPrice": 2.82,
+        "medianPrice": 2.67
+      },
+      {
+        "name": "Powdersled Rookery Loading Screen",
+        "lowestPrice": 0.15,
+        "medianPrice": 0.13
+      }
+    ],
+    "lowestBundlePrice": 19.03
+  },
+  {
+    "name": "Trail of the Grey Ghost",
+    "tier": 1,
+    "purchasedBundle": {
+      "lowestPrice": 22.51,
+      "medianPrice": 20.34
+    },
+    "assembledBundle": {
+      "lowestPrice": 18.08,
+      "medianPrice": 14.48
+    },
+    "items": [
+      {
+        "name": "Armor of the Grey Ghost",
+        "lowestPrice": 3.30,
+        "medianPrice": 2.83
+      },
+      {
+        "name": "Belt of the Grey Ghost",
+        "lowestPrice": 3.02,
+        "medianPrice": 2.54
+      },
+      {
+        "name": "Visage of the Grey Ghost",
+        "lowestPrice": 1.31,
+        "medianPrice": 1.06
+      },
+      {
+        "name": "Pauldron of the Grey Ghost",
+        "lowestPrice": 2.72,
+        "medianPrice": 2.12
+      },
+      {
+        "name": "Claws of the Grey Ghost",
+        "lowestPrice": 4.02,
+        "medianPrice": 3.22
+      },
+      {
+        "name": "Form of the Grey Ghost",
+        "lowestPrice": 2.42,
+        "medianPrice": 2.25
+      },
+      {
+        "name": "Companion of the Grey Ghost",
+        "lowestPrice": 1.29,
+        "medianPrice": 0.46
+      }
+    ],
+    "lowestBundlePrice": 18.08
+  },
+  {
+    "name": "Frostreach Brigands",
+    "tier": 1,
+    "purchasedBundle": {
+      "lowestPrice": 21.74,
+      "medianPrice": 21.47
+    },
+    "assembledBundle": {
+      "lowestPrice": 18.69,
+      "medianPrice": 17.52
+    },
+    "items": [
+      {
+        "name": "Frostreach Brigands Axes",
+        "lowestPrice": 3.53,
+        "medianPrice": 3.23
+      },
+      {
+        "name": "Frostreach Brigands Shoulders",
+        "lowestPrice": 1.55,
+        "medianPrice": 1.42
+      },
+      {
+        "name": "Frostreach Brigands Thermos",
+        "lowestPrice": 2.15,
+        "medianPrice": 1.97
+      },
+      {
+        "name": "Frostreach Brigands Hat",
+        "lowestPrice": 3.42,
+        "medianPrice": 3.30
+      },
+      {
+        "name": "Frostreach Brigands Scarf",
+        "lowestPrice": 4.16,
+        "medianPrice": 3.93
+      },
+      {
+        "name": "Frostreach Brigands Bracers",
+        "lowestPrice": 1.55,
+        "medianPrice": 1.42
+      },
+      {
+        "name": "Frostreach Brigands Harness",
+        "lowestPrice": 2.33,
+        "medianPrice": 2.25
+      }
+    ],
+    "lowestBundlePrice": 18.69
+  },
+  {
+    "name": "Trek of the Trailblazer",
+    "tier": 1,
+    "purchasedBundle": {
+      "lowestPrice": 22.36,
+      "medianPrice": 18.27
+    },
+    "assembledBundle": {
+      "lowestPrice": 19.89,
+      "medianPrice": 16.98
+    },
+    "items": [
+      {
+        "name": "Armor of the Trailblazer",
+        "lowestPrice": 2.20,
+        "medianPrice": 1.85
+      },
+      {
+        "name": "Seat of the Trailblazer",
+        "lowestPrice": 6.40,
+        "medianPrice": 5.26
+      },
+      {
+        "name": "Hat of the Trailblazer",
+        "lowestPrice": 4.38,
+        "medianPrice": 3.85
+      },
+      {
+        "name": "Saw of the Trailblazer",
+        "lowestPrice": 0.82,
+        "medianPrice": 0.72
+      },
+      {
+        "name": "Lights of the Trailblazer",
+        "lowestPrice": 4.52,
+        "medianPrice": 3.92
+      },
+      {
+        "name": "Claw of the Trailblazer",
+        "lowestPrice": 1.07,
+        "medianPrice": 0.96
+      },
+      {
+        "name": "Loading Screen of the Trailblazer",
+        "lowestPrice": 0.50,
+        "medianPrice": 0.42
+      }
+    ],
+    "lowestBundlePrice": 19.89
+  },
+  {
+    "name": "Northern Blight",
+    "tier": 1,
+    "purchasedBundle": {
+      "lowestPrice": 24.88,
+      "medianPrice": 23.12
+    },
+    "assembledBundle": {
+      "lowestPrice": 22.79,
+      "medianPrice": 21.99
+    },
+    "items": [
+      {
+        "name": "Northern Blight Arms",
+        "lowestPrice": 9.81,
+        "medianPrice": 9.42
+      },
+      {
+        "name": "Northern Blight Cape",
+        "lowestPrice": 2.14,
+        "medianPrice": 2.12
+      },
+      {
+        "name": "Northern Blight Style",
+        "lowestPrice": 3.70,
+        "medianPrice": 3.45
+      },
+      {
+        "name": "Northern Blight Belt",
+        "lowestPrice": 2.30,
+        "medianPrice": 2.28
+      },
+      {
+        "name": "Northern Blight Pauldrons",
+        "lowestPrice": 0.70,
+        "medianPrice": 0.70
+      },
+      {
+        "name": "Northern Blight Spirits",
+        "lowestPrice": 4.14,
+        "medianPrice": 4.02
+      }
+    ],
+    "lowestBundlePrice": 22.79
+  },
+  {
+    "name": "Icewrack Marauder",
+    "tier": 1,
+    "purchasedBundle": {
+      "lowestPrice": 23.54,
+      "medianPrice": 23.57
+    },
+    "assembledBundle": {
+      "lowestPrice": 24.84,
+      "medianPrice": 24.59
+    },
+    "items": [
+      {
+        "name": "Axes of the Icewrack Marauder",
+        "lowestPrice": 7.60,
+        "medianPrice": 7.44
+      },
+      {
+        "name": "Armor of the Icewrack Marauder",
+        "lowestPrice": 6.36,
+        "medianPrice": 6.36
+      },
+      {
+        "name": "Head of the Icewrack Marauder",
+        "lowestPrice": 10.26,
+        "medianPrice": 10.26
+      },
+      {
+        "name": "Shoulders of the Icewrack Marauder",
+        "lowestPrice": 0.62,
+        "medianPrice": 0.53
+      }
+    ],
+    "lowestBundlePrice": 23.54
+  },
+  {
+    "name": "Pack-Ice Privateer",
+    "tier": 1,
+    "purchasedBundle": {
+      "lowestPrice": 22.51,
+      "medianPrice": 20.72
+    },
+    "assembledBundle": {
+      "lowestPrice": 17.80,
+      "medianPrice": 16.40
+    },
+    "items": [
+      {
+        "name": "Belt of the Pack-Ice Privateer",
+        "lowestPrice": 1.43,
+        "medianPrice": 1.40
+      },
+      {
+        "name": "Gloves of the Pack-Ice Privateer",
+        "lowestPrice": 1.99,
+        "medianPrice": 1.91
+      },
+      {
+        "name": "Visage of the Pack-Ice Privateer",
+        "lowestPrice": 3.15,
+        "medianPrice": 3.12
+      },
+      {
+        "name": "Legs of the Pack-Ice Privateer",
+        "lowestPrice": 1.41,
+        "medianPrice": 1.42
+      },
+      {
+        "name": "Blade of the Pack-Ice Privateer",
+        "lowestPrice": 1.57,
+        "medianPrice": 1.57
+      },
+      {
+        "name": "Coat of the Pack-Ice Privateer",
+        "lowestPrice": 3.54,
+        "medianPrice": 3.13
+      },
+      {
+        "name": "Charm of the Pack-Ice Privateer",
+        "lowestPrice": 0.50,
+        "medianPrice": 0.24
+      },
+      {
+        "name": "Garb of the Pack-Ice Privateer",
+        "lowestPrice": 3.81,
+        "medianPrice": 3.20
+      },
+      {
+        "name": "Pack-Ice Privateer Loading Screen",
+        "lowestPrice": 0.40,
+        "medianPrice": 0.41
+      }
+    ],
+    "lowestBundlePrice": 17.80
+  },
+  {
+    "name": "Forgotten Renegade",
+    "tier": 1,
+    "purchasedBundle": {
+      "lowestPrice": 22.57,
+      "medianPrice": 20.91
+    },
+    "assembledBundle": {
+      "lowestPrice": 18.91,
+      "medianPrice": 15.09
+    },
+    "items": [
+      {
+        "name": "Light of the Forgotten Renegade",
+        "lowestPrice": 0.36,
+        "medianPrice": 0.43
+      },
+      {
+        "name": "Coat of the Forgotten Renegade",
+        "lowestPrice": 10.83,
+        "medianPrice": 6.78
+      },
+      {
+        "name": "Countenance of the Forgotten Renegade",
+        "lowestPrice": 5.63,
+        "medianPrice": 5.89
+      },
+      {
+        "name": "Mount of the Forgotten Renegade",
+        "lowestPrice": 1.75,
+        "medianPrice": 1.75
+      },
+      {
+        "name": "Loading Screen of the Forgotten Renegade",
+        "lowestPrice": 0.34,
+        "medianPrice": 0.24
+      }
+    ],
+    "lowestBundlePrice": 18.91
+  },
+  {
+    "name": "Ruler of the Frostbite Dunes",
+    "tier": 1,
+    "purchasedBundle": {
+      "lowestPrice": 23.23,
+      "medianPrice": 22.60
+    },
+    "assembledBundle": {
+      "lowestPrice": 19.58,
+      "medianPrice": 17.87
+    },
+    "items": [
+      {
+        "name": "Crown of the Frostbite Dunes",
+        "lowestPrice": 2.02,
+        "medianPrice": 1.76
+      },
+      {
+        "name": "Claws of the Frostbite Dunes",
+        "lowestPrice": 0.72,
+        "medianPrice": 0.42
+      },
+      {
+        "name": "Tail of the Frostbite Dunes",
+        "lowestPrice": 6.22,
+        "medianPrice": 5.68
+      },
+      {
+        "name": "Crawlers of the Frostbite Dunes",
+        "lowestPrice": 5.38,
+        "medianPrice": 5.26
+      },
+      {
+        "name": "Carapace of the Frostbite Dunes",
+        "lowestPrice": 4.51,
+        "medianPrice": 4.14
+      },
+      {
+        "name": "Ruler of the Frostbite Dunes Loading Screen",
+        "lowestPrice": 0.73,
+        "medianPrice": 0.61
+      }
+    ],
+    "lowestBundlePrice": 19.58
+  },
+  {
+    "name": "Hunt of the Odobenus One",
+    "tier": 1,
+    "purchasedBundle": {
+      "lowestPrice": 22.56,
+      "medianPrice": 20.76
+    },
+    "assembledBundle": {
+      "lowestPrice": 18.93,
+      "medianPrice": 19.25
+    },
+    "items": [
+      {
+        "name": "Hook of the Odobenus One",
+        "lowestPrice": 4.66,
+        "medianPrice": 4.55
+      },
+      {
+        "name": "Head of the Odobenus One",
+        "lowestPrice": 6.52,
+        "medianPrice": 6.91
+      },
+      {
+        "name": "Sawtooth of the Odobenus One",
+        "lowestPrice": 2.25,
+        "medianPrice": 2.67
+      },
+      {
+        "name": "Belt of the Odobenus One",
+        "lowestPrice": 2.83,
+        "medianPrice": 2.71
+      },
+      {
+        "name": "Net of the Odobenus One",
+        "lowestPrice": 1.08,
+        "medianPrice": 0.93
+      },
+      {
+        "name": "Bracer of the Odobenus One",
+        "lowestPrice": 0.85,
+        "medianPrice": 0.86
+      },
+      {
+        "name": "Arm of the Odobenus One",
+        "lowestPrice": 0.74,
+        "medianPrice": 0.62
+      }
+    ],
+    "lowestBundlePrice": 18.93
+  },
+  {
+    "name": "Apex Explorer",
+    "tier": 1,
+    "purchasedBundle": {
+      "lowestPrice": 26.27,
+      "medianPrice": 22.80
+    },
+    "assembledBundle": {
+      "lowestPrice": 19.31,
+      "medianPrice": 18.39
+    },
+    "items": [
+      {
+        "name": "Verna",
+        "lowestPrice": 9.10,
+        "medianPrice": 8.98
+      },
+      {
+        "name": "Shoulder of the Apex Explorer",
+        "lowestPrice": 2.93,
+        "medianPrice": 2.63
+      },
+      {
+        "name": "Belt of the Apex Explorer",
+        "lowestPrice": 2.10,
+        "medianPrice": 1.86
+      },
+      {
+        "name": "Head of the Apex Explorer",
+        "lowestPrice": 3.31,
+        "medianPrice": 3.21
+      },
+      {
+        "name": "Loading Screen of the Apex Explorer",
+        "lowestPrice": 1.87,
+        "medianPrice": 1.71
+      }
+    ],
+    "lowestBundlePrice": 19.31
+  }
+]

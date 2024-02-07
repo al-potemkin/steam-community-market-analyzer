@@ -11,6 +11,7 @@ import java.util.List;
 @AllArgsConstructor
 public class Bundle {
     private String name;
+    private int tier;
     private boolean bundle;
     private List<String> items;
 }

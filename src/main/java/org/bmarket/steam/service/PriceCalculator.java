@@ -94,6 +94,7 @@ public class PriceCalculator {
         var bundlePrice = marketService.getItemPriceInformation(bundle.getName(), currency, application);
         var bundlePriceInfo = BundlePriceInfo.builder()
                 .name(bundle.getName())
+                .tier(bundle.getTier())
                 .build();
 
         if (Objects.nonNull(bundlePrice.getLowestPrice())) {

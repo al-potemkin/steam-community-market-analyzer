@@ -1,6 +1,7 @@
 [
   {
     "name": "Mistress of the Long Night",
+    "tier": 1,
     "bundle": true,
     "items": [
       "Hood of the Long Night",
@@ -13,6 +14,7 @@
   },
   {
     "name": "First Night of the Summer Child",
+    "tier": 1,
     "bundle": true,
     "items": [
       "Style of the First Night",
@@ -25,6 +27,7 @@
   },
   {
     "name": "Powdersled Rookery",
+    "tier": 1,
     "bundle": true,
     "items": [
       "Powdersled Rookery Sled",
@@ -39,6 +42,7 @@
   },
   {
     "name": "Trail of the Grey Ghost",
+    "tier": 1,
     "bundle": true,
     "items": [
       "Armor of the Grey Ghost",
@@ -52,6 +56,7 @@
   },
   {
     "name": "Frostreach Brigands",
+    "tier": 1,
     "bundle": true,
     "items": [
       "Frostreach Brigands Axes",
@@ -65,6 +70,7 @@
   },
   {
     "name": "Trek of the Trailblazer",
+    "tier": 1,
     "bundle": true,
     "items": [
       "Armor of the Trailblazer",
@@ -78,6 +84,7 @@
   },
   {
     "name": "Northern Blight",
+    "tier": 1,
     "bundle": true,
     "items": [
       "Northern Blight Arms",
@@ -90,6 +97,7 @@
   },
   {
     "name": "Icewrack Marauder",
+    "tier": 1,
     "bundle": true,
     "items": [
       "Axes of the Icewrack Marauder",
@@ -100,6 +108,7 @@
   },
   {
     "name": "Pack-Ice Privateer",
+    "tier": 1,
     "bundle": true,
     "items": [
       "Belt of the Pack-Ice Privateer",
@@ -115,6 +124,7 @@
   },
   {
     "name": "Forgotten Renegade",
+    "tier": 1,
     "bundle": true,
     "items": [
       "Light of the Forgotten Renegade",
@@ -126,6 +136,7 @@
   },
   {
     "name": "Ruler of the Frostbite Dunes",
+    "tier": 1,
     "bundle": true,
     "items": [
       "Crown of the Frostbite Dunes",
@@ -138,6 +149,7 @@
   },
   {
     "name": "Hunt of the Odobenus One",
+    "tier": 1,
     "bundle": true,
     "items": [
       "Hook of the Odobenus One",
@@ -151,6 +163,7 @@
   },
   {
     "name": "Apex Explorer",
+    "tier": 1,
     "bundle": true,
     "items": [
       "Verna",
