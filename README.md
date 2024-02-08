@@ -24,7 +24,9 @@ mechanic:
 To optimize funds and make the most cost-effective investment in cosmetic items, the idea arose to calculate the price
 difference between open (when all items need to be purchased separately) and closed (complete set) states, and find the
 most advantageous option for both purchase and transformation.
+
 ---
+
 During the development process, I encountered the main and only difficulty - the lack of any open API from the Steam
 side to process market data available for research. According to
 this [stackoverflow](https://stackoverflow.com/questions/29902280/get-price-of-item-in-steam-community-market-with-json),
@@ -73,6 +75,9 @@ http://localhost:8080/price/compare
 ```curl
 http://localhost:8080/price/compare/full
 ```
+
 ---
+
 ##### For testing, you can use the data located in the following path: `src/main/resources/chests/`
+
 ##### Path to postman collection: `src/main/resources/postman/PriceController.postman_collection.json`
