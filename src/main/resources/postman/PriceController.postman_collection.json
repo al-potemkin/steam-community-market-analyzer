@@ -1,0 +1,522 @@
+{
+	"info": {
+		"_postman_id": "abcd0479-36f4-4568-bb50-5ada0af4bf57",
+		"name": "PriceController",
+		"description": "Postman collection for **steam-community-market-analyzer** project for testing: [https://github.com/al-potemkin/steam-community-market-analyzer](https://github.com/al-potemkin/steam-community-market-analyzer)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21989626"
+	},
+	"item": [
+		{
+			"name": "calculateBundlePrices",
+			"item": [
+				{
+					"name": "calculateBundlePrices - Tier 1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n  {\r\n    \"name\": \"Mistress of the Long Night\",\r\n    \"tier\": 1,\r\n    \"bundle\": true,\r\n    \"items\": [\r\n      \"Hood of the Long Night\",\r\n      \"Cape of the Long Night\",\r\n      \"Skirt of the Long Night\",\r\n      \"Feathers of the Long Night\",\r\n      \"Belt of the Long Night\",\r\n      \"Spirit of the Long Night\"\r\n    ]\r\n  },\r\n  {\r\n    \"name\": \"First Night of the Summer Child\",\r\n    \"tier\": 1,\r\n    \"bundle\": true,\r\n    \"items\": [\r\n      \"Style of the First Night\",\r\n      \"Spear of the First Night\",\r\n      \"Bracers of the First Night\",\r\n      \"Belt of the First Night\",\r\n      \"Garb of the First Night\",\r\n      \"Loading Screen of the First Night\"\r\n    ]\r\n  },\r\n  {\r\n    \"name\": \"Powdersled Rookery\",\r\n    \"tier\": 1,\r\n    \"bundle\": true,\r\n    \"items\": [\r\n      \"Powdersled Rookery Sled\",\r\n      \"Powdersled Rookery Cannon\",\r\n      \"Powdersled Rookery Bomb\",\r\n      \"Powdersled Rookery Sign\",\r\n      \"Powdersled Rookery Spleen\",\r\n      \"Powdersled Rookery Squee\",\r\n      \"Powdersled Rookery Spoon\",\r\n      \"Powdersled Rookery Loading Screen\"\r\n    ]\r\n  },\r\n  {\r\n    \"name\": \"Trail of the Grey Ghost\",\r\n    \"tier\": 1,\r\n    \"bundle\": true,\r\n    \"items\": [\r\n      \"Armor of the Grey Ghost\",\r\n      \"Belt of the Grey Ghost\",\r\n      \"Visage of the Grey Ghost\",\r\n      \"Pauldron of the Grey Ghost\",\r\n      \"Claws of the Grey Ghost\",\r\n      \"Form of the Grey Ghost\",\r\n      \"Companion of the Grey Ghost\"\r\n    ]\r\n  },\r\n  {\r\n    \"name\": \"Frostreach Brigands\",\r\n    \"tier\": 1,\r\n    \"bundle\": true,\r\n    \"items\": [\r\n      \"Frostreach Brigands Axes\",\r\n      \"Frostreach Brigands Shoulders\",\r\n      \"Frostreach Brigands Thermos\",\r\n      \"Frostreach Brigands Hat\",\r\n      \"Frostreach Brigands Scarf\",\r\n      \"Frostreach Brigands Bracers\",\r\n      \"Frostreach Brigands Harness\"\r\n    ]\r\n  },\r\n  {\r\n    \"name\": \"Trek of the Trailblazer\",\r\n    \"tier\": 1,\r\n    \"bundle\": true,\r\n    \"items\": [\r\n      \"Armor of the Trailblazer\",\r\n      \"Seat of the Trailblazer\",\r\n      \"Hat of the Trailblazer\",\r\n      \"Saw of the Trailblazer\",\r\n      \"Lights of the Trailblazer\",\r\n      \"Claw of the Trailblazer\",\r\n      \"Loading Screen of the Trailblazer\"\r\n    ]\r\n  },\r\n  {\r\n    \"name\": \"Northern Blight\",\r\n    \"tier\": 1,\r\n    \"bundle\": true,\r\n    \"items\": [\r\n      \"Northern Blight Arms\",\r\n      \"Northern Blight Cape\",\r\n      \"Northern Blight Style\",\r\n      \"Northern Blight Belt\",\r\n      \"Northern Blight Pauldrons\",\r\n      \"Northern Blight Spirits\"\r\n    ]\r\n  },\r\n  {\r\n    \"name\": \"Icewrack Marauder\",\r\n    \"tier\": 1,\r\n    \"bundle\": true,\r\n    \"items\": [\r\n      \"Axes of the Icewrack Marauder\",\r\n      \"Armor of the Icewrack Marauder\",\r\n      \"Head of the Icewrack Marauder\",\r\n      \"Shoulders of the Icewrack Marauder\"\r\n    ]\r\n  },\r\n  {\r\n    \"name\": \"Pack-Ice Privateer\",\r\n    \"tier\": 1,\r\n    \"bundle\": true,\r\n    \"items\": [\r\n      \"Belt of the Pack-Ice Privateer\",\r\n      \"Gloves of the Pack-Ice Privateer\",\r\n      \"Visage of the Pack-Ice Privateer\",\r\n      \"Legs of the Pack-Ice Privateer\",\r\n      \"Blade of the Pack-Ice Privateer\",\r\n      \"Coat of the Pack-Ice Privateer\",\r\n      \"Charm of the Pack-Ice Privateer\",\r\n      \"Garb of the Pack-Ice Privateer\",\r\n      \"Pack-Ice Privateer Loading Screen\"\r\n    ]\r\n  },\r\n  {\r\n    \"name\": \"Forgotten Renegade\",\r\n    \"tier\": 1,\r\n    \"bundle\": true,\r\n    \"items\": [\r\n      \"Light of the Forgotten Renegade\",\r\n      \"Coat of the Forgotten Renegade\",\r\n      \"Countenance of the Forgotten Renegade\",\r\n      \"Mount of the Forgotten Renegade\",\r\n      \"Loading Screen of the Forgotten Renegade\"\r\n    ]\r\n  },\r\n  {\r\n    \"name\": \"Ruler of the Frostbite Dunes\",\r\n    \"tier\": 1,\r\n    \"bundle\": true,\r\n    \"items\": [\r\n      \"Crown of the Frostbite Dunes\",\r\n      \"Claws of the Frostbite Dunes\",\r\n      \"Tail of the Frostbite Dunes\",\r\n      \"Crawlers of the Frostbite Dunes\",\r\n      \"Carapace of the Frostbite Dunes\",\r\n      \"Ruler of the Frostbite Dunes Loading Screen\"\r\n    ]\r\n  },\r\n  {\r\n    \"name\": \"Hunt of the Odobenus One\",\r\n    \"tier\": 1,\r\n    \"bundle\": true,\r\n    \"items\": [\r\n      \"Hook of the Odobenus One\",\r\n      \"Head of the Odobenus One\",\r\n      \"Sawtooth of the Odobenus One\",\r\n      \"Belt of the Odobenus One\",\r\n      \"Net of the Odobenus One\",\r\n      \"Bracer of the Odobenus One\",\r\n      \"Arm of the Odobenus One\"\r\n    ]\r\n  },\r\n  {\r\n    \"name\": \"Apex Explorer\",\r\n    \"tier\": 1,\r\n    \"bundle\": true,\r\n    \"items\": [\r\n      \"Verna\",\r\n      \"Shoulder of the Apex Explorer\",\r\n      \"Belt of the Apex Explorer\",\r\n      \"Head of the Apex Explorer\",\r\n      \"Loading Screen of the Apex Explorer\"\r\n    ]\r\n  }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/price/items?currency=UAH&application=DOTA_2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"price",
+								"items"
+							],
+							"query": [
+								{
+									"key": "currency",
+									"value": "UAH"
+								},
+								{
+									"key": "application",
+									"value": "DOTA_2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "calculateBundlePrices - Tier 2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n  {\r\n    \"name\": \"Winter Lineage Bite of the Surging Wind\",\r\n    \"tier\": 2,\r\n    \"bundle\": true,\r\n    \"items\": [\r\n      \"Winter Lineage Pauldron of the Surging Wind\",\r\n      \"Winter Lineage Horns of the Surging Wind\",\r\n      \"Winter Lineage Tail of the Surging Wind\",\r\n      \"Winter Lineage Belt of the Surging Wind\",\r\n      \"Winter Lineage Arms of the Surging Wind\",\r\n      \"Winter Lineage Gust of the Surging Wind\"\r\n    ]\r\n  },\r\n  {\r\n    \"name\": \"The Gaze of Zebulon\",\r\n    \"tier\": 2,\r\n    \"bundle\": true,\r\n    \"items\": [\r\n      \"Arms of Zebulon\",\r\n      \"Cape of Zebulon\",\r\n      \"Mask of Zebulon\",\r\n      \"Boots of Zebulon\",\r\n      \"Bow of Zebulon\",\r\n      \"Pauldrons of Zebulon\",\r\n      \"Quiver of Zebulon\",\r\n      \"The Gaze of Zebulon Loading Screen\"\r\n    ]\r\n  },\r\n  {\r\n    \"name\": \"Hush of Eternal Night\",\r\n    \"tier\": 2,\r\n    \"bundle\": true,\r\n    \"items\": [\r\n      \"Shield of Eternal Night\",\r\n      \"Belt of Eternal Night\",\r\n      \"Glaive of Eternal Night\",\r\n      \"Mask of Eternal Night\",\r\n      \"Bracer of Eternal Night\",\r\n      \"Armor of Eternal Night\"\r\n    ]\r\n  },\r\n  {\r\n    \"name\": \"Hunter of the Crystal Drift\",\r\n    \"tier\": 2,\r\n    \"bundle\": true,\r\n    \"items\": [\r\n      \"Claws of the Crystal Drift\",\r\n      \"Hide of the Crystal Drift\",\r\n      \"Belt of the Crystal Drift\",\r\n      \"Mane of the Crystal Drift\"\r\n    ]\r\n  },\r\n  {\r\n    \"name\": \"Rites of Vile Convocation\",\r\n    \"tier\": 2,\r\n    \"bundle\": true,\r\n    \"items\": [\r\n      \"Point of Vile Convocation\",\r\n      \"Crown of Vile Convocation\",\r\n      \"Belt of Vile Convocation\",\r\n      \"Chains of Vile Convocation\",\r\n      \"Bracer of Vile Convocation\",\r\n      \"Rites of Vile Convocation Loading Screen\"\r\n    ]\r\n  },\r\n  {\r\n    \"name\": \"Curious Coldspell\",\r\n    \"tier\": 2,\r\n    \"bundle\": true,\r\n    \"items\": [\r\n      \"Crown of Curious Coldspell\",\r\n      \"Tail of Curious Coldspell\",\r\n      \"Wings of Curious Coldspell\"\r\n    ]\r\n  },\r\n  {\r\n    \"name\": \"Frostmoot\",\r\n    \"tier\": 2,\r\n    \"bundle\": true,\r\n    \"items\": [\r\n      \"Large Frostmoot\",\r\n      \"Medium Frostmoot\",\r\n      \"Small Frostmoot\",\r\n      \"Tiny Frostmoot\",\r\n      \"Frostmoot Tree\"\r\n    ]\r\n  }\r\n]"
+						},
+						"url": {
+							"raw": "http://localhost:8080/price/items?currency=UAH&application=DOTA_2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"price",
+								"items"
+							],
+							"query": [
+								{
+									"key": "currency",
+									"value": "UAH"
+								},
+								{
+									"key": "application",
+									"value": "DOTA_2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "calculateBundlePrices - Tier 3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n  {\r\n    \"name\": \"Lumpo and Rupertus\",\r\n    \"tier\": 3,\r\n    \"bundle\": true,\r\n    \"items\": [\r\n      \"Lumpo and Rupertus - Shoulder\",\r\n      \"Lumpo and Rupertus - Offhand\",\r\n      \"Lumpo and Rupertus - Armor\",\r\n      \"Lumpo and Rupertus - Arms\",\r\n      \"Lumpo and Rupertus - Head\",\r\n      \"Lumpo and Rupertus - Back\",\r\n      \"Lumpo and Rupertus - Weapon\"\r\n    ]\r\n  },\r\n  {\r\n    \"name\": \"The Abominable Snowbeast\",\r\n    \"tier\": 3,\r\n    \"bundle\": true,\r\n    \"items\": [\r\n      \"The Abominable Snowbeast - Arms\",\r\n      \"The Abominable Snowbeast - Legs\",\r\n      \"The Abominable Snowbeast - Head\",\r\n      \"The Abominable Snowbeast - Back\",\r\n      \"The Abominable Snowbeast Loading Screen\"\r\n    ]\r\n  },\r\n  {\r\n    \"name\": \"Silent Wight\",\r\n    \"tier\": 3,\r\n    \"bundle\": true,\r\n    \"items\": [\r\n      \"Silent Wight - Arms\",\r\n      \"Silent Wight - Hood\",\r\n      \"Silent Wight - Scarf\",\r\n      \"Silent Wight - Tail\"\r\n    ]\r\n  },\r\n  {\r\n    \"name\": \"Silver Squall\",\r\n    \"tier\": 3,\r\n    \"bundle\": true,\r\n    \"items\": [\r\n      \"Silver Squall - Armor\",\r\n      \"Silver Squall - Weapon\",\r\n      \"Silver Squall - Head\",\r\n      \"Silver Squall - Costume\",\r\n      \"Silver Squall - Mount\",\r\n      \"Silver Squall Loading Screen\"\r\n    ]\r\n  },\r\n  {\r\n    \"name\": \"Orbuculum Equinox\",\r\n    \"tier\": 3,\r\n    \"bundle\": false\r\n  },\r\n  {\r\n    \"name\": \"Jingle Fist Bundle\",\r\n    \"tier\": 3,\r\n    \"bundle\": true,\r\n    \"items\": [\r\n      \"Jingle Fist\",\r\n      \"Jingle Fist Loading Screen\"\r\n    ]\r\n  },\r\n  {\r\n    \"name\": \"Frosty the Sew-Man\",\r\n    \"tier\": 3,\r\n    \"bundle\": false\r\n  }\r\n]"
+						},
+						"url": {
+							"raw": "http://localhost:8080/price/items?currency=UAH&application=DOTA_2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"price",
+								"items"
+							],
+							"query": [
+								{
+									"key": "currency",
+									"value": "UAH"
+								},
+								{
+									"key": "application",
+									"value": "DOTA_2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "calculateBundlePrices - Tier 4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n  {\r\n    \"name\": \"Guardian Snow Angel\",\r\n    \"tier\": 4,\r\n    \"bundle\": false\r\n  },\r\n  {\r\n    \"name\": \"King Kringle\",\r\n    \"tier\": 4,\r\n    \"bundle\": false\r\n  }\r\n]"
+						},
+						"url": {
+							"raw": "http://localhost:8080/price/items?currency=UAH&application=DOTA_2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"price",
+								"items"
+							],
+							"query": [
+								{
+									"key": "currency",
+									"value": "UAH"
+								},
+								{
+									"key": "application",
+									"value": "DOTA_2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "calculateBundlePrices - Tier 5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n  {\r\n    \"name\": \"Gingerbread Baby Roshan\",\r\n    \"tier\": 5,\r\n    \"bundle\": false\r\n  }\r\n]"
+						},
+						"url": {
+							"raw": "http://localhost:8080/price/items?currency=UAH&application=DOTA_2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"price",
+								"items"
+							],
+							"query": [
+								{
+									"key": "currency",
+									"value": "UAH"
+								},
+								{
+									"key": "application",
+									"value": "DOTA_2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "findLowestPriceBundle",
+			"item": [
+				{
+					"name": "findLowestPriceBundle - Tier 1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n  {\n    \"name\": \"Mistress of the Long Night\",\n    \"tier\": 1,\n    \"purchasedBundle\": {\n      \"lowestPrice\": 22.57,\n      \"medianPrice\": 21.47\n    },\n    \"assembledBundle\": {\n      \"lowestPrice\": 17.48,\n      \"medianPrice\": 16.13\n    },\n    \"items\": [\n      {\n        \"name\": \"Hood of the Long Night\",\n        \"lowestPrice\": 1.84,\n        \"medianPrice\": 1.65\n      },\n      {\n        \"name\": \"Cape of the Long Night\",\n        \"lowestPrice\": 2.57,\n        \"medianPrice\": 2.47\n      },\n      {\n        \"name\": \"Skirt of the Long Night\",\n        \"lowestPrice\": 1.22,\n        \"medianPrice\": 1.08\n      },\n      {\n        \"name\": \"Feathers of the Long Night\",\n        \"lowestPrice\": 6.85,\n        \"medianPrice\": 6.59\n      },\n      {\n        \"name\": \"Belt of the Long Night\",\n        \"lowestPrice\": 1.51,\n        \"medianPrice\": 1.47\n      },\n      {\n        \"name\": \"Spirit of the Long Night\",\n        \"lowestPrice\": 3.49,\n        \"medianPrice\": 2.87\n      }\n    ],\n    \"lowestBundlePrice\": 17.48\n  },\n  {\n    \"name\": \"First Night of the Summer Child\",\n    \"tier\": 1,\n    \"purchasedBundle\": {\n      \"lowestPrice\": 22.35,\n      \"medianPrice\": 22.16\n    },\n    \"assembledBundle\": {\n      \"lowestPrice\": 18.78,\n      \"medianPrice\": 17.08\n    },\n    \"items\": [\n      {\n        \"name\": \"Style of the First Night\",\n        \"lowestPrice\": 6.62,\n        \"medianPrice\": 6.63\n      },\n      {\n        \"name\": \"Spear of the First Night\",\n        \"lowestPrice\": 2.46,\n        \"medianPrice\": 1.67\n      },\n      {\n        \"name\": \"Bracers of the First Night\",\n        \"lowestPrice\": 3.50,\n        \"medianPrice\": 3.25\n      },\n      {\n        \"name\": \"Belt of the First Night\",\n        \"lowestPrice\": 2.18,\n        \"medianPrice\": 1.96\n      },\n      {\n        \"name\": \"Garb of the First Night\",\n        \"lowestPrice\": 1.87,\n        \"medianPrice\": 1.68\n      },\n      {\n        \"name\": \"Loading Screen of the First Night\",\n        \"lowestPrice\": 2.15,\n        \"medianPrice\": 1.89\n      }\n    ],\n    \"lowestBundlePrice\": 18.78\n  },\n  {\n    \"name\": \"Powdersled Rookery\",\n    \"tier\": 1,\n    \"purchasedBundle\": {\n      \"lowestPrice\": 28.95,\n      \"medianPrice\": 23.38\n    },\n    \"assembledBundle\": {\n      \"lowestPrice\": 19.03,\n      \"medianPrice\": 63.80\n    },\n    \"items\": [\n      {\n        \"name\": \"Powdersled Rookery Sled\",\n        \"lowestPrice\": 3.30,\n        \"medianPrice\": 3.39\n      },\n      {\n        \"name\": \"Powdersled Rookery Cannon\",\n        \"lowestPrice\": 4.09,\n        \"medianPrice\": 3.87\n      },\n      {\n        \"name\": \"Powdersled Rookery Bomb\",\n        \"lowestPrice\": 0.21,\n        \"medianPrice\": 0.38\n      },\n      {\n        \"name\": \"Powdersled Rookery Sign\",\n        \"lowestPrice\": 0.40,\n        \"medianPrice\": 45.65\n      },\n      {\n        \"name\": \"Powdersled Rookery Spleen\",\n        \"lowestPrice\": 4.78,\n        \"medianPrice\": 4.81\n      },\n      {\n        \"name\": \"Powdersled Rookery Squee\",\n        \"lowestPrice\": 3.28,\n        \"medianPrice\": 2.90\n      },\n      {\n        \"name\": \"Powdersled Rookery Spoon\",\n        \"lowestPrice\": 2.82,\n        \"medianPrice\": 2.67\n      },\n      {\n        \"name\": \"Powdersled Rookery Loading Screen\",\n        \"lowestPrice\": 0.15,\n        \"medianPrice\": 0.13\n      }\n    ],\n    \"lowestBundlePrice\": 19.03\n  },\n  {\n    \"name\": \"Trail of the Grey Ghost\",\n    \"tier\": 1,\n    \"purchasedBundle\": {\n      \"lowestPrice\": 22.51,\n      \"medianPrice\": 20.34\n    },\n    \"assembledBundle\": {\n      \"lowestPrice\": 18.08,\n      \"medianPrice\": 14.48\n    },\n    \"items\": [\n      {\n        \"name\": \"Armor of the Grey Ghost\",\n        \"lowestPrice\": 3.30,\n        \"medianPrice\": 2.83\n      },\n      {\n        \"name\": \"Belt of the Grey Ghost\",\n        \"lowestPrice\": 3.02,\n        \"medianPrice\": 2.54\n      },\n      {\n        \"name\": \"Visage of the Grey Ghost\",\n        \"lowestPrice\": 1.31,\n        \"medianPrice\": 1.06\n      },\n      {\n        \"name\": \"Pauldron of the Grey Ghost\",\n        \"lowestPrice\": 2.72,\n        \"medianPrice\": 2.12\n      },\n      {\n        \"name\": \"Claws of the Grey Ghost\",\n        \"lowestPrice\": 4.02,\n        \"medianPrice\": 3.22\n      },\n      {\n        \"name\": \"Form of the Grey Ghost\",\n        \"lowestPrice\": 2.42,\n        \"medianPrice\": 2.25\n      },\n      {\n        \"name\": \"Companion of the Grey Ghost\",\n        \"lowestPrice\": 1.29,\n        \"medianPrice\": 0.46\n      }\n    ],\n    \"lowestBundlePrice\": 18.08\n  },\n  {\n    \"name\": \"Frostreach Brigands\",\n    \"tier\": 1,\n    \"purchasedBundle\": {\n      \"lowestPrice\": 21.74,\n      \"medianPrice\": 21.47\n    },\n    \"assembledBundle\": {\n      \"lowestPrice\": 18.69,\n      \"medianPrice\": 17.52\n    },\n    \"items\": [\n      {\n        \"name\": \"Frostreach Brigands Axes\",\n        \"lowestPrice\": 3.53,\n        \"medianPrice\": 3.23\n      },\n      {\n        \"name\": \"Frostreach Brigands Shoulders\",\n        \"lowestPrice\": 1.55,\n        \"medianPrice\": 1.42\n      },\n      {\n        \"name\": \"Frostreach Brigands Thermos\",\n        \"lowestPrice\": 2.15,\n        \"medianPrice\": 1.97\n      },\n      {\n        \"name\": \"Frostreach Brigands Hat\",\n        \"lowestPrice\": 3.42,\n        \"medianPrice\": 3.30\n      },\n      {\n        \"name\": \"Frostreach Brigands Scarf\",\n        \"lowestPrice\": 4.16,\n        \"medianPrice\": 3.93\n      },\n      {\n        \"name\": \"Frostreach Brigands Bracers\",\n        \"lowestPrice\": 1.55,\n        \"medianPrice\": 1.42\n      },\n      {\n        \"name\": \"Frostreach Brigands Harness\",\n        \"lowestPrice\": 2.33,\n        \"medianPrice\": 2.25\n      }\n    ],\n    \"lowestBundlePrice\": 18.69\n  },\n  {\n    \"name\": \"Trek of the Trailblazer\",\n    \"tier\": 1,\n    \"purchasedBundle\": {\n      \"lowestPrice\": 22.36,\n      \"medianPrice\": 18.27\n    },\n    \"assembledBundle\": {\n      \"lowestPrice\": 19.89,\n      \"medianPrice\": 16.98\n    },\n    \"items\": [\n      {\n        \"name\": \"Armor of the Trailblazer\",\n        \"lowestPrice\": 2.20,\n        \"medianPrice\": 1.85\n      },\n      {\n        \"name\": \"Seat of the Trailblazer\",\n        \"lowestPrice\": 6.40,\n        \"medianPrice\": 5.26\n      },\n      {\n        \"name\": \"Hat of the Trailblazer\",\n        \"lowestPrice\": 4.38,\n        \"medianPrice\": 3.85\n      },\n      {\n        \"name\": \"Saw of the Trailblazer\",\n        \"lowestPrice\": 0.82,\n        \"medianPrice\": 0.72\n      },\n      {\n        \"name\": \"Lights of the Trailblazer\",\n        \"lowestPrice\": 4.52,\n        \"medianPrice\": 3.92\n      },\n      {\n        \"name\": \"Claw of the Trailblazer\",\n        \"lowestPrice\": 1.07,\n        \"medianPrice\": 0.96\n      },\n      {\n        \"name\": \"Loading Screen of the Trailblazer\",\n        \"lowestPrice\": 0.50,\n        \"medianPrice\": 0.42\n      }\n    ],\n    \"lowestBundlePrice\": 19.89\n  },\n  {\n    \"name\": \"Northern Blight\",\n    \"tier\": 1,\n    \"purchasedBundle\": {\n      \"lowestPrice\": 24.88,\n      \"medianPrice\": 23.12\n    },\n    \"assembledBundle\": {\n      \"lowestPrice\": 22.79,\n      \"medianPrice\": 21.99\n    },\n    \"items\": [\n      {\n        \"name\": \"Northern Blight Arms\",\n        \"lowestPrice\": 9.81,\n        \"medianPrice\": 9.42\n      },\n      {\n        \"name\": \"Northern Blight Cape\",\n        \"lowestPrice\": 2.14,\n        \"medianPrice\": 2.12\n      },\n      {\n        \"name\": \"Northern Blight Style\",\n        \"lowestPrice\": 3.70,\n        \"medianPrice\": 3.45\n      },\n      {\n        \"name\": \"Northern Blight Belt\",\n        \"lowestPrice\": 2.30,\n        \"medianPrice\": 2.28\n      },\n      {\n        \"name\": \"Northern Blight Pauldrons\",\n        \"lowestPrice\": 0.70,\n        \"medianPrice\": 0.70\n      },\n      {\n        \"name\": \"Northern Blight Spirits\",\n        \"lowestPrice\": 4.14,\n        \"medianPrice\": 4.02\n      }\n    ],\n    \"lowestBundlePrice\": 22.79\n  },\n  {\n    \"name\": \"Icewrack Marauder\",\n    \"tier\": 1,\n    \"purchasedBundle\": {\n      \"lowestPrice\": 23.54,\n      \"medianPrice\": 23.57\n    },\n    \"assembledBundle\": {\n      \"lowestPrice\": 24.84,\n      \"medianPrice\": 24.59\n    },\n    \"items\": [\n      {\n        \"name\": \"Axes of the Icewrack Marauder\",\n        \"lowestPrice\": 7.60,\n        \"medianPrice\": 7.44\n      },\n      {\n        \"name\": \"Armor of the Icewrack Marauder\",\n        \"lowestPrice\": 6.36,\n        \"medianPrice\": 6.36\n      },\n      {\n        \"name\": \"Head of the Icewrack Marauder\",\n        \"lowestPrice\": 10.26,\n        \"medianPrice\": 10.26\n      },\n      {\n        \"name\": \"Shoulders of the Icewrack Marauder\",\n        \"lowestPrice\": 0.62,\n        \"medianPrice\": 0.53\n      }\n    ],\n    \"lowestBundlePrice\": 23.54\n  },\n  {\n    \"name\": \"Pack-Ice Privateer\",\n    \"tier\": 1,\n    \"purchasedBundle\": {\n      \"lowestPrice\": 22.51,\n      \"medianPrice\": 20.72\n    },\n    \"assembledBundle\": {\n      \"lowestPrice\": 17.80,\n      \"medianPrice\": 16.40\n    },\n    \"items\": [\n      {\n        \"name\": \"Belt of the Pack-Ice Privateer\",\n        \"lowestPrice\": 1.43,\n        \"medianPrice\": 1.40\n      },\n      {\n        \"name\": \"Gloves of the Pack-Ice Privateer\",\n        \"lowestPrice\": 1.99,\n        \"medianPrice\": 1.91\n      },\n      {\n        \"name\": \"Visage of the Pack-Ice Privateer\",\n        \"lowestPrice\": 3.15,\n        \"medianPrice\": 3.12\n      },\n      {\n        \"name\": \"Legs of the Pack-Ice Privateer\",\n        \"lowestPrice\": 1.41,\n        \"medianPrice\": 1.42\n      },\n      {\n        \"name\": \"Blade of the Pack-Ice Privateer\",\n        \"lowestPrice\": 1.57,\n        \"medianPrice\": 1.57\n      },\n      {\n        \"name\": \"Coat of the Pack-Ice Privateer\",\n        \"lowestPrice\": 3.54,\n        \"medianPrice\": 3.13\n      },\n      {\n        \"name\": \"Charm of the Pack-Ice Privateer\",\n        \"lowestPrice\": 0.50,\n        \"medianPrice\": 0.24\n      },\n      {\n        \"name\": \"Garb of the Pack-Ice Privateer\",\n        \"lowestPrice\": 3.81,\n        \"medianPrice\": 3.20\n      },\n      {\n        \"name\": \"Pack-Ice Privateer Loading Screen\",\n        \"lowestPrice\": 0.40,\n        \"medianPrice\": 0.41\n      }\n    ],\n    \"lowestBundlePrice\": 17.80\n  },\n  {\n    \"name\": \"Forgotten Renegade\",\n    \"tier\": 1,\n    \"purchasedBundle\": {\n      \"lowestPrice\": 22.57,\n      \"medianPrice\": 20.91\n    },\n    \"assembledBundle\": {\n      \"lowestPrice\": 18.91,\n      \"medianPrice\": 15.09\n    },\n    \"items\": [\n      {\n        \"name\": \"Light of the Forgotten Renegade\",\n        \"lowestPrice\": 0.36,\n        \"medianPrice\": 0.43\n      },\n      {\n        \"name\": \"Coat of the Forgotten Renegade\",\n        \"lowestPrice\": 10.83,\n        \"medianPrice\": 6.78\n      },\n      {\n        \"name\": \"Countenance of the Forgotten Renegade\",\n        \"lowestPrice\": 5.63,\n        \"medianPrice\": 5.89\n      },\n      {\n        \"name\": \"Mount of the Forgotten Renegade\",\n        \"lowestPrice\": 1.75,\n        \"medianPrice\": 1.75\n      },\n      {\n        \"name\": \"Loading Screen of the Forgotten Renegade\",\n        \"lowestPrice\": 0.34,\n        \"medianPrice\": 0.24\n      }\n    ],\n    \"lowestBundlePrice\": 18.91\n  },\n  {\n    \"name\": \"Ruler of the Frostbite Dunes\",\n    \"tier\": 1,\n    \"purchasedBundle\": {\n      \"lowestPrice\": 23.23,\n      \"medianPrice\": 22.60\n    },\n    \"assembledBundle\": {\n      \"lowestPrice\": 19.58,\n      \"medianPrice\": 17.87\n    },\n    \"items\": [\n      {\n        \"name\": \"Crown of the Frostbite Dunes\",\n        \"lowestPrice\": 2.02,\n        \"medianPrice\": 1.76\n      },\n      {\n        \"name\": \"Claws of the Frostbite Dunes\",\n        \"lowestPrice\": 0.72,\n        \"medianPrice\": 0.42\n      },\n      {\n        \"name\": \"Tail of the Frostbite Dunes\",\n        \"lowestPrice\": 6.22,\n        \"medianPrice\": 5.68\n      },\n      {\n        \"name\": \"Crawlers of the Frostbite Dunes\",\n        \"lowestPrice\": 5.38,\n        \"medianPrice\": 5.26\n      },\n      {\n        \"name\": \"Carapace of the Frostbite Dunes\",\n        \"lowestPrice\": 4.51,\n        \"medianPrice\": 4.14\n      },\n      {\n        \"name\": \"Ruler of the Frostbite Dunes Loading Screen\",\n        \"lowestPrice\": 0.73,\n        \"medianPrice\": 0.61\n      }\n    ],\n    \"lowestBundlePrice\": 19.58\n  },\n  {\n    \"name\": \"Hunt of the Odobenus One\",\n    \"tier\": 1,\n    \"purchasedBundle\": {\n      \"lowestPrice\": 22.56,\n      \"medianPrice\": 20.76\n    },\n    \"assembledBundle\": {\n      \"lowestPrice\": 18.93,\n      \"medianPrice\": 19.25\n    },\n    \"items\": [\n      {\n        \"name\": \"Hook of the Odobenus One\",\n        \"lowestPrice\": 4.66,\n        \"medianPrice\": 4.55\n      },\n      {\n        \"name\": \"Head of the Odobenus One\",\n        \"lowestPrice\": 6.52,\n        \"medianPrice\": 6.91\n      },\n      {\n        \"name\": \"Sawtooth of the Odobenus One\",\n        \"lowestPrice\": 2.25,\n        \"medianPrice\": 2.67\n      },\n      {\n        \"name\": \"Belt of the Odobenus One\",\n        \"lowestPrice\": 2.83,\n        \"medianPrice\": 2.71\n      },\n      {\n        \"name\": \"Net of the Odobenus One\",\n        \"lowestPrice\": 1.08,\n        \"medianPrice\": 0.93\n      },\n      {\n        \"name\": \"Bracer of the Odobenus One\",\n        \"lowestPrice\": 0.85,\n        \"medianPrice\": 0.86\n      },\n      {\n        \"name\": \"Arm of the Odobenus One\",\n        \"lowestPrice\": 0.74,\n        \"medianPrice\": 0.62\n      }\n    ],\n    \"lowestBundlePrice\": 18.93\n  },\n  {\n    \"name\": \"Apex Explorer\",\n    \"tier\": 1,\n    \"purchasedBundle\": {\n      \"lowestPrice\": 26.27,\n      \"medianPrice\": 22.80\n    },\n    \"assembledBundle\": {\n      \"lowestPrice\": 19.31,\n      \"medianPrice\": 18.39\n    },\n    \"items\": [\n      {\n        \"name\": \"Verna\",\n        \"lowestPrice\": 9.10,\n        \"medianPrice\": 8.98\n      },\n      {\n        \"name\": \"Shoulder of the Apex Explorer\",\n        \"lowestPrice\": 2.93,\n        \"medianPrice\": 2.63\n      },\n      {\n        \"name\": \"Belt of the Apex Explorer\",\n        \"lowestPrice\": 2.10,\n        \"medianPrice\": 1.86\n      },\n      {\n        \"name\": \"Head of the Apex Explorer\",\n        \"lowestPrice\": 3.31,\n        \"medianPrice\": 3.21\n      },\n      {\n        \"name\": \"Loading Screen of the Apex Explorer\",\n        \"lowestPrice\": 1.87,\n        \"medianPrice\": 1.71\n      }\n    ],\n    \"lowestBundlePrice\": 19.31\n  }\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/price/lowest",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"price",
+								"lowest"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findLowestPriceBundle - Tier 2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n  {\n    \"name\": \"Winter Lineage Bite of the Surging Wind\",\n    \"tier\": 2,\n    \"purchasedBundle\": {\n      \"lowestPrice\": 119,\n      \"medianPrice\": 112.14\n    },\n    \"assembledBundle\": {\n      \"lowestPrice\": 115.78,\n      \"medianPrice\": 105.97\n    },\n    \"items\": [\n      {\n        \"name\": \"Winter Lineage Pauldron of the Surging Wind\",\n        \"lowestPrice\": 24.72,\n        \"medianPrice\": 24.82\n      },\n      {\n        \"name\": \"Winter Lineage Horns of the Surging Wind\",\n        \"lowestPrice\": 13,\n        \"medianPrice\": 9.98\n      },\n      {\n        \"name\": \"Winter Lineage Tail of the Surging Wind\",\n        \"lowestPrice\": 5.24,\n        \"medianPrice\": 4.28\n      },\n      {\n        \"name\": \"Winter Lineage Belt of the Surging Wind\",\n        \"lowestPrice\": 7.79,\n        \"medianPrice\": 6.15\n      },\n      {\n        \"name\": \"Winter Lineage Arms of the Surging Wind\",\n        \"lowestPrice\": 59.89,\n        \"medianPrice\": 55.87\n      },\n      {\n        \"name\": \"Winter Lineage Gust of the Surging Wind\",\n        \"lowestPrice\": 5.14,\n        \"medianPrice\": 4.87\n      }\n    ],\n    \"lowestBundlePrice\": 115.78\n  },\n  {\n    \"name\": \"The Gaze of Zebulon\",\n    \"tier\": 2,\n    \"purchasedBundle\": {\n      \"lowestPrice\": 111.41,\n      \"medianPrice\": 40.01\n    },\n    \"assembledBundle\": {\n      \"lowestPrice\": 92.89,\n      \"medianPrice\": 90.53\n    },\n    \"items\": [\n      {\n        \"name\": \"Arms of Zebulon\",\n        \"lowestPrice\": 7.84,\n        \"medianPrice\": 7.67\n      },\n      {\n        \"name\": \"Cape of Zebulon\",\n        \"lowestPrice\": 6.57,\n        \"medianPrice\": 6.41\n      },\n      {\n        \"name\": \"Mask of Zebulon\",\n        \"lowestPrice\": 43.38,\n        \"medianPrice\": 42.55\n      },\n      {\n        \"name\": \"Boots of Zebulon\",\n        \"lowestPrice\": 4.76,\n        \"medianPrice\": 4.78\n      },\n      {\n        \"name\": \"Bow of Zebulon\",\n        \"lowestPrice\": 11.22,\n        \"medianPrice\": 11.25\n      },\n      {\n        \"name\": \"Pauldrons of Zebulon\",\n        \"lowestPrice\": 15.36,\n        \"medianPrice\": 15.16\n      },\n      {\n        \"name\": \"Quiver of Zebulon\",\n        \"lowestPrice\": 2.10,\n        \"medianPrice\": 2.08\n      },\n      {\n        \"name\": \"The Gaze of Zebulon Loading Screen\",\n        \"lowestPrice\": 1.66,\n        \"medianPrice\": 0.63\n      }\n    ],\n    \"lowestBundlePrice\": 92.89\n  },\n  {\n    \"name\": \"Hush of Eternal Night\",\n    \"tier\": 2,\n    \"purchasedBundle\": {\n      \"lowestPrice\": 114.96,\n      \"medianPrice\": 101.38\n    },\n    \"assembledBundle\": {\n      \"lowestPrice\": 121.86,\n      \"medianPrice\": 111.21\n    },\n    \"items\": [\n      {\n        \"name\": \"Shield of Eternal Night\",\n        \"lowestPrice\": 14.75,\n        \"medianPrice\": 13.63\n      },\n      {\n        \"name\": \"Belt of Eternal Night\",\n        \"lowestPrice\": 65.50,\n        \"medianPrice\": 59.87\n      },\n      {\n        \"name\": \"Glaive of Eternal Night\",\n        \"lowestPrice\": 2.66,\n        \"medianPrice\": 2.67\n      },\n      {\n        \"name\": \"Mask of Eternal Night\",\n        \"lowestPrice\": 14.69,\n        \"medianPrice\": 14.40\n      },\n      {\n        \"name\": \"Bracer of Eternal Night\",\n        \"lowestPrice\": 1.66,\n        \"medianPrice\": 1.68\n      },\n      {\n        \"name\": \"Armor of Eternal Night\",\n        \"lowestPrice\": 22.60,\n        \"medianPrice\": 18.96\n      }\n    ],\n    \"lowestBundlePrice\": 114.96\n  },\n  {\n    \"name\": \"Hunter of the Crystal Drift\",\n    \"tier\": 2,\n    \"purchasedBundle\": {\n      \"lowestPrice\": 114.67,\n      \"medianPrice\": 108.76\n    },\n    \"assembledBundle\": {\n      \"lowestPrice\": 99.45,\n      \"medianPrice\": 96.89\n    },\n    \"items\": [\n      {\n        \"name\": \"Claws of the Crystal Drift\",\n        \"lowestPrice\": 62.64,\n        \"medianPrice\": 60.10\n      },\n      {\n        \"name\": \"Hide of the Crystal Drift\",\n        \"lowestPrice\": 4.50,\n        \"medianPrice\": 4.02\n      },\n      {\n        \"name\": \"Belt of the Crystal Drift\",\n        \"lowestPrice\": 4.30,\n        \"medianPrice\": 4.87\n      },\n      {\n        \"name\": \"Mane of the Crystal Drift\",\n        \"lowestPrice\": 28.01,\n        \"medianPrice\": 27.90\n      }\n    ],\n    \"lowestBundlePrice\": 99.45\n  },\n  {\n    \"name\": \"Rites of Vile Convocation\",\n    \"tier\": 2,\n    \"purchasedBundle\": {\n      \"lowestPrice\": 111.36,\n      \"medianPrice\": 108.66\n    },\n    \"assembledBundle\": {\n      \"lowestPrice\": 130.91,\n      \"medianPrice\": 108.65\n    },\n    \"items\": [\n      {\n        \"name\": \"Point of Vile Convocation\",\n        \"lowestPrice\": 10.75,\n        \"medianPrice\": 9.53\n      },\n      {\n        \"name\": \"Crown of Vile Convocation\",\n        \"lowestPrice\": 18.22,\n        \"medianPrice\": 13.46\n      },\n      {\n        \"name\": \"Belt of Vile Convocation\",\n        \"lowestPrice\": 63.25,\n        \"medianPrice\": 47.61\n      },\n      {\n        \"name\": \"Chains of Vile Convocation\",\n        \"lowestPrice\": 36.80,\n        \"medianPrice\": 36.43\n      },\n      {\n        \"name\": \"Bracer of Vile Convocation\",\n        \"lowestPrice\": 0.24,\n        \"medianPrice\": 0.37\n      },\n      {\n        \"name\": \"Rites of Vile Convocation Loading Screen\",\n        \"lowestPrice\": 1.65,\n        \"medianPrice\": 1.25\n      }\n    ],\n    \"lowestBundlePrice\": 111.36\n  },\n  {\n    \"name\": \"Curious Coldspell\",\n    \"tier\": 2,\n    \"purchasedBundle\": {\n      \"lowestPrice\": 111.93,\n      \"medianPrice\": 101.11\n    },\n    \"assembledBundle\": {\n      \"lowestPrice\": 109.92,\n      \"medianPrice\": 101.01\n    },\n    \"items\": [\n      {\n        \"name\": \"Crown of Curious Coldspell\",\n        \"lowestPrice\": 16.47,\n        \"medianPrice\": 16.24\n      },\n      {\n        \"name\": \"Tail of Curious Coldspell\",\n        \"lowestPrice\": 2.37,\n        \"medianPrice\": 2.39\n      },\n      {\n        \"name\": \"Wings of Curious Coldspell\",\n        \"lowestPrice\": 91.08,\n        \"medianPrice\": 82.38\n      }\n    ],\n    \"lowestBundlePrice\": 109.92\n  },\n  {\n    \"name\": \"Frostmoot\",\n    \"tier\": 2,\n    \"purchasedBundle\": {\n      \"lowestPrice\": 140.73,\n      \"medianPrice\": 140.72\n    },\n    \"assembledBundle\": {\n      \"lowestPrice\": 133.31,\n      \"medianPrice\": 137.63\n    },\n    \"items\": [\n      {\n        \"name\": \"Large Frostmoot\",\n        \"lowestPrice\": 20.50,\n        \"medianPrice\": 19.66\n      },\n      {\n        \"name\": \"Medium Frostmoot\",\n        \"lowestPrice\": 9.51,\n        \"medianPrice\": 9.82\n      },\n      {\n        \"name\": \"Small Frostmoot\",\n        \"lowestPrice\": 8.80,\n        \"medianPrice\": 10.84\n      },\n      {\n        \"name\": \"Tiny Frostmoot\",\n        \"lowestPrice\": 19.98,\n        \"medianPrice\": 19.99\n      },\n      {\n        \"name\": \"Frostmoot Tree\",\n        \"lowestPrice\": 74.52,\n        \"medianPrice\": 77.32\n      }\n    ],\n    \"lowestBundlePrice\": 133.31\n  }\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/price/lowest",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"price",
+								"lowest"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findLowestPriceBundle - Tier 3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n  {\n    \"name\": \"Lumpo and Rupertus\",\n    \"tier\": 3,\n    \"purchasedBundle\": {\n      \"lowestPrice\": 558.37,\n      \"medianPrice\": 460.46\n    },\n    \"assembledBundle\": {\n      \"lowestPrice\": 541.98,\n      \"medianPrice\": 0\n    },\n    \"items\": [\n      {\n        \"name\": \"Lumpo and Rupertus - Shoulder\",\n        \"lowestPrice\": 206.97,\n        \"medianPrice\": 199.58\n      },\n      {\n        \"name\": \"Lumpo and Rupertus - Offhand\",\n        \"lowestPrice\": 19.03,\n        \"medianPrice\": 16.56\n      },\n      {\n        \"name\": \"Lumpo and Rupertus - Armor\",\n        \"lowestPrice\": 74.61,\n        \"medianPrice\": 73.60\n      },\n      {\n        \"name\": \"Lumpo and Rupertus - Arms\",\n        \"lowestPrice\": 61.53,\n        \"medianPrice\": 52.51\n      },\n      {\n        \"name\": \"Lumpo and Rupertus - Head\",\n        \"lowestPrice\": 30.18,\n        \"medianPrice\": 24.95\n      },\n      {\n        \"name\": \"Lumpo and Rupertus - Back\",\n        \"lowestPrice\": 24.95,\n        \"medianPrice\": null\n      },\n      {\n        \"name\": \"Lumpo and Rupertus - Weapon\",\n        \"lowestPrice\": 124.71,\n        \"medianPrice\": 137.33\n      }\n    ],\n    \"lowestBundlePrice\": 541.98\n  },\n  {\n    \"name\": \"The Abominable Snowbeast\",\n    \"tier\": 3,\n    \"purchasedBundle\": {\n      \"lowestPrice\": 565.24,\n      \"medianPrice\": 539.06\n    },\n    \"assembledBundle\": {\n      \"lowestPrice\": 583.42,\n      \"medianPrice\": 502.24\n    },\n    \"items\": [\n      {\n        \"name\": \"The Abominable Snowbeast - Arms\",\n        \"lowestPrice\": 53.31,\n        \"medianPrice\": 45.56\n      },\n      {\n        \"name\": \"The Abominable Snowbeast - Legs\",\n        \"lowestPrice\": 42.17,\n        \"medianPrice\": 37.73\n      },\n      {\n        \"name\": \"The Abominable Snowbeast - Head\",\n        \"lowestPrice\": 257.65,\n        \"medianPrice\": 226.38\n      },\n      {\n        \"name\": \"The Abominable Snowbeast - Back\",\n        \"lowestPrice\": 224.49,\n        \"medianPrice\": 189.16\n      },\n      {\n        \"name\": \"The Abominable Snowbeast Loading Screen\",\n        \"lowestPrice\": 5.80,\n        \"medianPrice\": 3.41\n      }\n    ],\n    \"lowestBundlePrice\": 565.24\n  },\n  {\n    \"name\": \"Silent Wight\",\n    \"tier\": 3,\n    \"purchasedBundle\": {\n      \"lowestPrice\": 560.58,\n      \"medianPrice\": 554.49\n    },\n    \"assembledBundle\": {\n      \"lowestPrice\": 502.74,\n      \"medianPrice\": 405.98\n    },\n    \"items\": [\n      {\n        \"name\": \"Silent Wight - Arms\",\n        \"lowestPrice\": 22.78,\n        \"medianPrice\": 17.36\n      },\n      {\n        \"name\": \"Silent Wight - Hood\",\n        \"lowestPrice\": 285.61,\n        \"medianPrice\": 304.25\n      },\n      {\n        \"name\": \"Silent Wight - Scarf\",\n        \"lowestPrice\": 57.73,\n        \"medianPrice\": 42.18\n      },\n      {\n        \"name\": \"Silent Wight - Tail\",\n        \"lowestPrice\": 136.62,\n        \"medianPrice\": 42.19\n      }\n    ],\n    \"lowestBundlePrice\": 502.74\n  },\n  {\n    \"name\": \"Silver Squall\",\n    \"tier\": 3,\n    \"purchasedBundle\": {\n      \"lowestPrice\": 605.51,\n      \"medianPrice\": 587.78\n    },\n    \"assembledBundle\": {\n      \"lowestPrice\": 681.37,\n      \"medianPrice\": 721.50\n    },\n    \"items\": [\n      {\n        \"name\": \"Silver Squall - Armor\",\n        \"lowestPrice\": 19.09,\n        \"medianPrice\": 20.44\n      },\n      {\n        \"name\": \"Silver Squall - Weapon\",\n        \"lowestPrice\": 10.66,\n        \"medianPrice\": 10.19\n      },\n      {\n        \"name\": \"Silver Squall - Head\",\n        \"lowestPrice\": 15.61,\n        \"medianPrice\": 15.72\n      },\n      {\n        \"name\": \"Silver Squall - Costume\",\n        \"lowestPrice\": 10.66,\n        \"medianPrice\": 10.62\n      },\n      {\n        \"name\": \"Silver Squall - Mount\",\n        \"lowestPrice\": 620.92,\n        \"medianPrice\": 660.22\n      },\n      {\n        \"name\": \"Silver Squall Loading Screen\",\n        \"lowestPrice\": 4.43,\n        \"medianPrice\": 4.31\n      }\n    ],\n    \"lowestBundlePrice\": 605.51\n  },\n  {\n    \"name\": \"Orbuculum Equinox\",\n    \"tier\": 3,\n    \"purchasedBundle\": {\n      \"lowestPrice\": 592.16,\n      \"medianPrice\": 576.66\n    },\n    \"lowestBundlePrice\": 592.16\n  },\n  {\n    \"name\": \"Jingle Fist Bundle\",\n    \"tier\": 3,\n    \"purchasedBundle\": {\n      \"lowestPrice\": 523.64,\n      \"medianPrice\": 544.93\n    },\n    \"assembledBundle\": {\n      \"lowestPrice\": 579.59,\n      \"medianPrice\": 525.25\n    },\n    \"items\": [\n      {\n        \"name\": \"Jingle Fist\",\n        \"lowestPrice\": 575.73,\n        \"medianPrice\": 521.37\n      },\n      {\n        \"name\": \"Jingle Fist Loading Screen\",\n        \"lowestPrice\": 3.86,\n        \"medianPrice\": 3.88\n      }\n    ],\n    \"lowestBundlePrice\": 523.64\n  },\n  {\n    \"name\": \"Frosty the Sew-Man\",\n    \"tier\": 3,\n    \"purchasedBundle\": {\n      \"lowestPrice\": 835.78,\n      \"medianPrice\": 832.74\n    },\n    \"lowestBundlePrice\": 835.78\n  }\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/price/lowest",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"price",
+								"lowest"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findLowestPriceBundle - Tier 4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n  {\n    \"name\": \"Guardian Snow Angel\",\n    \"tier\": 4,\n    \"purchasedBundle\": {\n      \"lowestPrice\": 748.35,\n      \"medianPrice\": 741.97\n    },\n    \"lowestBundlePrice\": 748.35\n  },\n  {\n    \"name\": \"King Kringle\",\n    \"tier\": 4,\n    \"purchasedBundle\": {\n      \"lowestPrice\": 4689.99,\n      \"medianPrice\": 4528.14\n    },\n    \"lowestBundlePrice\": 4689.99\n  }\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/price/lowest",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"price",
+								"lowest"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "compareBundles",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n  {\n    \"name\": \"Mistress of the Long Night\",\n    \"tier\": 1,\n    \"bundle\": true,\n    \"items\": [\n      \"Hood of the Long Night\",\n      \"Cape of the Long Night\",\n      \"Skirt of the Long Night\",\n      \"Feathers of the Long Night\",\n      \"Belt of the Long Night\",\n      \"Spirit of the Long Night\"\n    ]\n  },\n  {\n    \"name\": \"First Night of the Summer Child\",\n    \"tier\": 1,\n    \"bundle\": true,\n    \"items\": [\n      \"Style of the First Night\",\n      \"Spear of the First Night\",\n      \"Bracers of the First Night\",\n      \"Belt of the First Night\",\n      \"Garb of the First Night\",\n      \"Loading Screen of the First Night\"\n    ]\n  },\n  {\n    \"name\": \"Powdersled Rookery\",\n    \"tier\": 1,\n    \"bundle\": true,\n    \"items\": [\n      \"Powdersled Rookery Sled\",\n      \"Powdersled Rookery Cannon\",\n      \"Powdersled Rookery Bomb\",\n      \"Powdersled Rookery Sign\",\n      \"Powdersled Rookery Spleen\",\n      \"Powdersled Rookery Squee\",\n      \"Powdersled Rookery Spoon\",\n      \"Powdersled Rookery Loading Screen\"\n    ]\n  },\n  {\n    \"name\": \"Trail of the Grey Ghost\",\n    \"tier\": 1,\n    \"bundle\": true,\n    \"items\": [\n      \"Armor of the Grey Ghost\",\n      \"Belt of the Grey Ghost\",\n      \"Visage of the Grey Ghost\",\n      \"Pauldron of the Grey Ghost\",\n      \"Claws of the Grey Ghost\",\n      \"Form of the Grey Ghost\",\n      \"Companion of the Grey Ghost\"\n    ]\n  },\n  {\n    \"name\": \"Frostreach Brigands\",\n    \"tier\": 1,\n    \"bundle\": true,\n    \"items\": [\n      \"Frostreach Brigands Axes\",\n      \"Frostreach Brigands Shoulders\",\n      \"Frostreach Brigands Thermos\",\n      \"Frostreach Brigands Hat\",\n      \"Frostreach Brigands Scarf\",\n      \"Frostreach Brigands Bracers\",\n      \"Frostreach Brigands Harness\"\n    ]\n  },\n  {\n    \"name\": \"Trek of the Trailblazer\",\n    \"tier\": 1,\n    \"bundle\": true,\n    \"items\": [\n      \"Armor of the Trailblazer\",\n      \"Seat of the Trailblazer\",\n      \"Hat of the Trailblazer\",\n      \"Saw of the Trailblazer\",\n      \"Lights of the Trailblazer\",\n      \"Claw of the Trailblazer\",\n      \"Loading Screen of the Trailblazer\"\n    ]\n  },\n  {\n    \"name\": \"Northern Blight\",\n    \"tier\": 1,\n    \"bundle\": true,\n    \"items\": [\n      \"Northern Blight Arms\",\n      \"Northern Blight Cape\",\n      \"Northern Blight Style\",\n      \"Northern Blight Belt\",\n      \"Northern Blight Pauldrons\",\n      \"Northern Blight Spirits\"\n    ]\n  },\n  {\n    \"name\": \"Icewrack Marauder\",\n    \"tier\": 1,\n    \"bundle\": true,\n    \"items\": [\n      \"Axes of the Icewrack Marauder\",\n      \"Armor of the Icewrack Marauder\",\n      \"Head of the Icewrack Marauder\",\n      \"Shoulders of the Icewrack Marauder\"\n    ]\n  },\n  {\n    \"name\": \"Pack-Ice Privateer\",\n    \"tier\": 1,\n    \"bundle\": true,\n    \"items\": [\n      \"Belt of the Pack-Ice Privateer\",\n      \"Gloves of the Pack-Ice Privateer\",\n      \"Visage of the Pack-Ice Privateer\",\n      \"Legs of the Pack-Ice Privateer\",\n      \"Blade of the Pack-Ice Privateer\",\n      \"Coat of the Pack-Ice Privateer\",\n      \"Charm of the Pack-Ice Privateer\",\n      \"Garb of the Pack-Ice Privateer\",\n      \"Pack-Ice Privateer Loading Screen\"\n    ]\n  },\n  {\n    \"name\": \"Forgotten Renegade\",\n    \"tier\": 1,\n    \"bundle\": true,\n    \"items\": [\n      \"Light of the Forgotten Renegade\",\n      \"Coat of the Forgotten Renegade\",\n      \"Countenance of the Forgotten Renegade\",\n      \"Mount of the Forgotten Renegade\",\n      \"Loading Screen of the Forgotten Renegade\"\n    ]\n  },\n  {\n    \"name\": \"Ruler of the Frostbite Dunes\",\n    \"tier\": 1,\n    \"bundle\": true,\n    \"items\": [\n      \"Crown of the Frostbite Dunes\",\n      \"Claws of the Frostbite Dunes\",\n      \"Tail of the Frostbite Dunes\",\n      \"Crawlers of the Frostbite Dunes\",\n      \"Carapace of the Frostbite Dunes\",\n      \"Ruler of the Frostbite Dunes Loading Screen\"\n    ]\n  },\n  {\n    \"name\": \"Hunt of the Odobenus One\",\n    \"tier\": 1,\n    \"bundle\": true,\n    \"items\": [\n      \"Hook of the Odobenus One\",\n      \"Head of the Odobenus One\",\n      \"Sawtooth of the Odobenus One\",\n      \"Belt of the Odobenus One\",\n      \"Net of the Odobenus One\",\n      \"Bracer of the Odobenus One\",\n      \"Arm of the Odobenus One\"\n    ]\n  },\n  {\n    \"name\": \"Apex Explorer\",\n    \"tier\": 1,\n    \"bundle\": true,\n    \"items\": [\n      \"Verna\",\n      \"Shoulder of the Apex Explorer\",\n      \"Belt of the Apex Explorer\",\n      \"Head of the Apex Explorer\",\n      \"Loading Screen of the Apex Explorer\"\n    ]\n  },\n  {\n    \"name\": \"Winter Lineage Bite of the Surging Wind\",\n    \"tier\": 2,\n    \"bundle\": true,\n    \"items\": [\n      \"Winter Lineage Pauldron of the Surging Wind\",\n      \"Winter Lineage Horns of the Surging Wind\",\n      \"Winter Lineage Tail of the Surging Wind\",\n      \"Winter Lineage Belt of the Surging Wind\",\n      \"Winter Lineage Arms of the Surging Wind\",\n      \"Winter Lineage Gust of the Surging Wind\"\n    ]\n  },\n  {\n    \"name\": \"The Gaze of Zebulon\",\n    \"tier\": 2,\n    \"bundle\": true,\n    \"items\": [\n      \"Arms of Zebulon\",\n      \"Cape of Zebulon\",\n      \"Mask of Zebulon\",\n      \"Boots of Zebulon\",\n      \"Bow of Zebulon\",\n      \"Pauldrons of Zebulon\",\n      \"Quiver of Zebulon\",\n      \"The Gaze of Zebulon Loading Screen\"\n    ]\n  },\n  {\n    \"name\": \"Hush of Eternal Night\",\n    \"tier\": 2,\n    \"bundle\": true,\n    \"items\": [\n      \"Shield of Eternal Night\",\n      \"Belt of Eternal Night\",\n      \"Glaive of Eternal Night\",\n      \"Mask of Eternal Night\",\n      \"Bracer of Eternal Night\",\n      \"Armor of Eternal Night\"\n    ]\n  },\n  {\n    \"name\": \"Hunter of the Crystal Drift\",\n    \"tier\": 2,\n    \"bundle\": true,\n    \"items\": [\n      \"Claws of the Crystal Drift\",\n      \"Hide of the Crystal Drift\",\n      \"Belt of the Crystal Drift\",\n      \"Mane of the Crystal Drift\"\n    ]\n  },\n  {\n    \"name\": \"Rites of Vile Convocation\",\n    \"tier\": 2,\n    \"bundle\": true,\n    \"items\": [\n      \"Point of Vile Convocation\",\n      \"Crown of Vile Convocation\",\n      \"Belt of Vile Convocation\",\n      \"Chains of Vile Convocation\",\n      \"Bracer of Vile Convocation\",\n      \"Rites of Vile Convocation Loading Screen\"\n    ]\n  },\n  {\n    \"name\": \"Curious Coldspell\",\n    \"tier\": 2,\n    \"bundle\": true,\n    \"items\": [\n      \"Crown of Curious Coldspell\",\n      \"Tail of Curious Coldspell\",\n      \"Wings of Curious Coldspell\"\n    ]\n  },\n  {\n    \"name\": \"Frostmoot\",\n    \"tier\": 2,\n    \"bundle\": true,\n    \"items\": [\n      \"Large Frostmoot\",\n      \"Medium Frostmoot\",\n      \"Small Frostmoot\",\n      \"Tiny Frostmoot\",\n      \"Frostmoot Tree\"\n    ]\n  },\n  {\n    \"name\": \"Lumpo and Rupertus\",\n    \"tier\": 3,\n    \"bundle\": true,\n    \"items\": [\n      \"Lumpo and Rupertus - Shoulder\",\n      \"Lumpo and Rupertus - Offhand\",\n      \"Lumpo and Rupertus - Armor\",\n      \"Lumpo and Rupertus - Arms\",\n      \"Lumpo and Rupertus - Head\",\n      \"Lumpo and Rupertus - Back\",\n      \"Lumpo and Rupertus - Weapon\"\n    ]\n  },\n  {\n    \"name\": \"The Abominable Snowbeast\",\n    \"tier\": 3,\n    \"bundle\": true,\n    \"items\": [\n      \"The Abominable Snowbeast - Arms\",\n      \"The Abominable Snowbeast - Legs\",\n      \"The Abominable Snowbeast - Head\",\n      \"The Abominable Snowbeast - Back\",\n      \"The Abominable Snowbeast Loading Screen\"\n    ]\n  },\n  {\n    \"name\": \"Silent Wight\",\n    \"tier\": 3,\n    \"bundle\": true,\n    \"items\": [\n      \"Silent Wight - Arms\",\n      \"Silent Wight - Hood\",\n      \"Silent Wight - Scarf\",\n      \"Silent Wight - Tail\"\n    ]\n  },\n  {\n    \"name\": \"Silver Squall\",\n    \"tier\": 3,\n    \"bundle\": true,\n    \"items\": [\n      \"Silver Squall - Armor\",\n      \"Silver Squall - Weapon\",\n      \"Silver Squall - Head\",\n      \"Silver Squall - Costume\",\n      \"Silver Squall - Mount\",\n      \"Silver Squall Loading Screen\"\n    ]\n  },\n  {\n    \"name\": \"Orbuculum Equinox\",\n    \"tier\": 3,\n    \"bundle\": false\n  },\n  {\n    \"name\": \"Jingle Fist Bundle\",\n    \"tier\": 3,\n    \"bundle\": true,\n    \"items\": [\n      \"Jingle Fist\",\n      \"Jingle Fist Loading Screen\"\n    ]\n  },\n  {\n    \"name\": \"Frosty the Sew-Man\",\n    \"tier\": 3,\n    \"bundle\": false\n  },\n  {\n    \"name\": \"Guardian Snow Angel\",\n    \"tier\": 4,\n    \"bundle\": false\n  },\n  {\n    \"name\": \"King Kringle\",\n    \"tier\": 4,\n    \"bundle\": false\n  }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/price/compare/full?currency=UAH&application=DOTA_2&numberOfItemsToRecycle=5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"price",
+						"compare",
+						"full"
+					],
+					"query": [
+						{
+							"key": "currency",
+							"value": "UAH"
+						},
+						{
+							"key": "application",
+							"value": "DOTA_2"
+						},
+						{
+							"key": "numberOfItemsToRecycle",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getItemPriceInformation",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/price?item=Mistress of the Long Night&currency=UAH&application=DOTA_2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"price"
+					],
+					"query": [
+						{
+							"key": "item",
+							"value": "Mistress of the Long Night"
+						},
+						{
+							"key": "currency",
+							"value": "UAH"
+						},
+						{
+							"key": "application",
+							"value": "DOTA_2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "compare",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n  {\n    \"name\": \"Mistress of the Long Night\",\n    \"tier\": 1,\n    \"purchasedBundle\": {\n      \"lowestPrice\": 22.57,\n      \"medianPrice\": 21.47\n    },\n    \"assembledBundle\": {\n      \"lowestPrice\": 17.48,\n      \"medianPrice\": 16.13\n    },\n    \"items\": [\n      {\n        \"name\": \"Hood of the Long Night\",\n        \"lowestPrice\": 1.84,\n        \"medianPrice\": 1.65\n      },\n      {\n        \"name\": \"Cape of the Long Night\",\n        \"lowestPrice\": 2.57,\n        \"medianPrice\": 2.47\n      },\n      {\n        \"name\": \"Skirt of the Long Night\",\n        \"lowestPrice\": 1.22,\n        \"medianPrice\": 1.08\n      },\n      {\n        \"name\": \"Feathers of the Long Night\",\n        \"lowestPrice\": 6.85,\n        \"medianPrice\": 6.59\n      },\n      {\n        \"name\": \"Belt of the Long Night\",\n        \"lowestPrice\": 1.51,\n        \"medianPrice\": 1.47\n      },\n      {\n        \"name\": \"Spirit of the Long Night\",\n        \"lowestPrice\": 3.49,\n        \"medianPrice\": 2.87\n      }\n    ],\n    \"lowestBundlePrice\": 17.48\n  },\n  {\n    \"name\": \"The Gaze of Zebulon\",\n    \"tier\": 2,\n    \"purchasedBundle\": {\n      \"lowestPrice\": 111.41,\n      \"medianPrice\": 40.01\n    },\n    \"assembledBundle\": {\n      \"lowestPrice\": 92.89,\n      \"medianPrice\": 90.53\n    },\n    \"items\": [\n      {\n        \"name\": \"Arms of Zebulon\",\n        \"lowestPrice\": 7.84,\n        \"medianPrice\": 7.67\n      },\n      {\n        \"name\": \"Cape of Zebulon\",\n        \"lowestPrice\": 6.57,\n        \"medianPrice\": 6.41\n      },\n      {\n        \"name\": \"Mask of Zebulon\",\n        \"lowestPrice\": 43.38,\n        \"medianPrice\": 42.55\n      },\n      {\n        \"name\": \"Boots of Zebulon\",\n        \"lowestPrice\": 4.76,\n        \"medianPrice\": 4.78\n      },\n      {\n        \"name\": \"Bow of Zebulon\",\n        \"lowestPrice\": 11.22,\n        \"medianPrice\": 11.25\n      },\n      {\n        \"name\": \"Pauldrons of Zebulon\",\n        \"lowestPrice\": 15.36,\n        \"medianPrice\": 15.16\n      },\n      {\n        \"name\": \"Quiver of Zebulon\",\n        \"lowestPrice\": 2.10,\n        \"medianPrice\": 2.08\n      },\n      {\n        \"name\": \"The Gaze of Zebulon Loading Screen\",\n        \"lowestPrice\": 1.66,\n        \"medianPrice\": 0.63\n      }\n    ],\n    \"lowestBundlePrice\": 92.89\n  },\n  {\n    \"name\": \"Silent Wight\",\n    \"tier\": 3,\n    \"purchasedBundle\": {\n      \"lowestPrice\": 560.58,\n      \"medianPrice\": 554.49\n    },\n    \"assembledBundle\": {\n      \"lowestPrice\": 502.74,\n      \"medianPrice\": 405.98\n    },\n    \"items\": [\n      {\n        \"name\": \"Silent Wight - Arms\",\n        \"lowestPrice\": 22.78,\n        \"medianPrice\": 17.36\n      },\n      {\n        \"name\": \"Silent Wight - Hood\",\n        \"lowestPrice\": 285.61,\n        \"medianPrice\": 304.25\n      },\n      {\n        \"name\": \"Silent Wight - Scarf\",\n        \"lowestPrice\": 57.73,\n        \"medianPrice\": 42.18\n      },\n      {\n        \"name\": \"Silent Wight - Tail\",\n        \"lowestPrice\": 136.62,\n        \"medianPrice\": 42.19\n      }\n    ],\n    \"lowestBundlePrice\": 502.74\n  },\n  {\n    \"name\": \"Guardian Snow Angel\",\n    \"tier\": 4,\n    \"purchasedBundle\": {\n      \"lowestPrice\": 748.35,\n      \"medianPrice\": 741.97\n    },\n    \"lowestBundlePrice\": 748.35\n  }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/price/compare?numberOfItemsToRecycle=5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"price",
+						"compare"
+					],
+					"query": [
+						{
+							"key": "numberOfItemsToRecycle",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get price from Steam trade market",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://steamcommunity.com/market/priceoverview/?currency=18&format=json&appid=570&market_hash_name=Winter%20Lineage%20Pauldron%20of%20the%20Surging%20Wind",
+					"protocol": "https",
+					"host": [
+						"steamcommunity",
+						"com"
+					],
+					"path": [
+						"market",
+						"priceoverview",
+						""
+					],
+					"query": [
+						{
+							"key": "currency",
+							"value": "18"
+						},
+						{
+							"key": "format",
+							"value": "json"
+						},
+						{
+							"key": "appid",
+							"value": "570"
+						},
+						{
+							"key": "market_hash_name",
+							"value": "Winter%20Lineage%20Pauldron%20of%20the%20Surging%20Wind"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
